@@ -20,7 +20,7 @@ public interface Queue<T> {
 	 * @return if exist, the element at the beginning
 	 * @throws EmptyQueueExeption
 	 */
-	public T dequeue();
+	public T dequeue() throws EmptyQueueExeption;
 	
 	/**
 	 * this method retrieves the item at the front of the queue. </br>
@@ -29,7 +29,7 @@ public interface Queue<T> {
 	 * @return if exist, the element at the beginning
 	 * @throws EmptyQueueExeption
 	 */
-	public T front();
+	public T front() throws EmptyQueueExeption;
 	
 	/**
 	 * this method determines if the queue is empty </br>
