@@ -1,3 +1,6 @@
+/**
+ * @author Carlos Eduardo Lizalda Valencia
+ */
 package cUtil;
 
 public class CQueue<T> implements Queue<T> {
