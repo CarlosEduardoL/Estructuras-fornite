@@ -16,14 +16,14 @@ public interface List<T> {
 	 * <b>Post: </b> If insertion is successful, item is at position index, and other items are renumbered accordingly. </br>
 	 * @Throws ListIndexOutOfBoundsException when index < 0 or index > size()
 	 */
-	public void add(int index, T item);
+	public void add(int index, T item) throws ListIndexOutOfBoundsException;
 	
 	/**
 	 * <b>Pre: </b> index indicates the position in the list of the item to be removed </br>
 	 * <b>Post: <b> if 1<= index <= size(), the item at position index is deleted, and other items are renumbered accordingly <br>
 	 * @Throws: ListIndexOutOfBoundsException if index < 0 or index > size().
 	 */
-	public void remove(int index);
+	public void remove(int index) throws ListIndexOutOfBoundsException;
 	
 	/**
 	 * <b>Pre: </b> None </br>
@@ -36,7 +36,7 @@ public interface List<T> {
 	 * <b>Post: </b> if 1<= index <= size(), the item at position index is returned </br>
 	 *  @throws ListIndexOutOfBoundsException if index < 0 or index >= size()
 	 */
-	public T get(int index);
+	public T get(int index) throws ListIndexOutOfBoundsException;
 	
 	/**
 	 * <b>Pre: </b> None <br>
