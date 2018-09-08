@@ -79,5 +79,46 @@ class ListTest {
 			}
 		}
 	}
+	
+	@Test
+	void isEmptyTest() {
+		setUp1();
+		if (!list.isEmpty()) {
+			fail("it doesn't work");
+		}
+		int number = 10;
+		for (int i = 0; i < number; i++) {
+			list.add(i);
+		}
+		if (list.isEmpty()) {
+			fail("it doesn't work");
+		}
+		for (int i = 0; i < number; i++) {
+			list.remove(0);
+		}
+		if (!list.isEmpty()) {
+			fail("it doesn't work");
+		}
+	}
+	
+	@Test
+	void sizeTest() {
+		setUp1();
+		if (list.size() != 0) {
+			fail("it doesn't work");
+		}
+		
+		int size = list.size();
+		list.add(5);
+		if (! (size + 1 == list.size())) {
+			fail("it doesn't work");
+		}
+		
+		size = list.size();
+		list.remove(0);
+		if (! (size - 1 == list.size())) {
+			fail("it doesn't work");
+		}
+	}
 
 }
