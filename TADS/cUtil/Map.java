@@ -4,9 +4,11 @@
 package cUtil;
 
 /**
- * @author ZeroN
+ * @author Carlos Eduardo Lizalda Valdencia
  *
  */
 public interface Map<T> {
 
+	
+	
 }
