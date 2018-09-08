@@ -110,4 +110,13 @@ public class CQueue<T> implements Queue<T> {
 		return size == 0;
 	}
 
+	/* (non-Javadoc)
+	 * @see cUtil.Queue#getSize()
+	 */
+	@Override
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return size;
+	}
+	
 }
