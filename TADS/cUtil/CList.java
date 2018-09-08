@@ -118,10 +118,11 @@ public class CList<T> implements List<T>{
 		
 		T[] temp = array.clone();
 		array[index] = null;
-		size--;
-		for (int i = index+1; i < size; i++) {
-			array[i-1] = temp[i];
+		
+		for (int i = index; i < size; i++) {
+			array[i] = temp[i+1];
 		}
+		size--;
 		
 	}
 
@@ -156,6 +157,7 @@ public class CList<T> implements List<T>{
 		return size;
 	}
 	
+	@SuppressWarnings("unchecked")
 	private void resizeArray() {
 		T[] temp = array.clone();
 		array = (T[]) new Object[array.length * GROWTH_FACTOR];
@@ -164,7 +166,8 @@ public class CList<T> implements List<T>{
 		}
 	}
 	
-	public boolean equals(CList<T> list) {
+	@Override
+	public boolean equals(List<T> list) {
 		boolean equals = false;
 		if (list.size() == this.size()) {
 			equals = true;
@@ -174,5 +177,5 @@ public class CList<T> implements List<T>{
 		}
 		return equals;
 	}
-
+	
 }

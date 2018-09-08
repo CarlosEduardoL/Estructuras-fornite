@@ -43,5 +43,12 @@ public interface List<T> {
 	 * <b>Post: </b> Returns the number of items currently in the list </br>
 	 */
 	public int size();
+		
+	/**
+	 * check if two list are equals
+	 * @param list - another List
+	 * @return
+	 */
+	public boolean equals(List<T> list);
 
 }

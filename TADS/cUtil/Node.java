@@ -72,7 +72,18 @@ public class Node<T> {
 	}
 	
 	public boolean equals(Node<T> node) {
-		return item.equals(node.getItem());
+		return item.equals(node.getItem()) && subEquals(getNext(), node.getNext());
 	}
-
+	
+	private boolean subEquals(Node<T> a, Node<T> b) {
+		if (a == null && b == null) {
+			return true;
+		}else if(!(a == null && b == null)) {
+			return false;
+		}else if(a.getItem().equals(b.getItem())){
+			return true && subEquals(a.getNext(), b.getNext());
+		}else {
+			return false;
+		}
+	}
 }

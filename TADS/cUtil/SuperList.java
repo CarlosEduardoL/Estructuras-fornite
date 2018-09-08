@@ -28,15 +28,39 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	public SuperList() {
 	}
 	
+	/**
+	 * TO DO
+	 * @param list
+	 */
 	public SuperList(SuperList<T> list) {
 		first = list.getFirstNode();
 		last = list.getLastNode();
 		size = list.size();
 	}
 	
+	/**
+	 * TO DO
+	 * @param list
+	 */
+	public SuperList(List<T> list) {
+		for (int i = 0; i < list.size(); i++) {
+			add(list.get(i));
+		}
+	}
+	
+	/**
+	 * TO DO
+	 * @param element
+	 */
 	public SuperList(T element) {
 		first = new Node<T>(element);
 		last = first;
+	}
+	
+	public SuperList(T[] arr) {
+		for (int i = 0; i < arr.length; i++) {
+			add(arr[i]);
+		}
 	}
 	
 	//------------------Methods----------------\\
@@ -122,9 +146,18 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	 */
 	@Override
 	public void add(T item) {
-		last.setNext(new Node<T>(item));
-		last = last.getNext();
-		size++;
+		if (first == null) {
+			first = new Node<T>(item);
+			size++;
+		}else if(last == null){
+			last = new Node<T>(item);
+			first.setNext(last);
+			size++;
+		}else {
+			last.setNext(new Node<T>(item));
+			last = last.getNext();
+			size++;
+		}
 	}
 
 	/* (non-Javadoc)
@@ -183,7 +216,7 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 			throw new ListIndexOutOfBoundsException("the index " + index + " is out of the list");
 		}
 		Node<T> actual = first;
-		for (int i = 0; i < index - 1; i++) {
+		for (int i = 0; i < index; i++) {
 			actual = actual.getNext();
 		}
 		return actual.getItem();
@@ -204,6 +237,21 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	
 	private Node<T> getLastNode(){
 		return last;
+	}
+
+	/* (non-Javadoc)
+	 * @see cUtil.List#equals(cUtil.List)
+	 */
+	@Override
+	public boolean equals(List<T> list) {
+		boolean equals = false;
+		if (list.size() == this.size()) {
+			equals = true;
+			for (int i = 0; i < list.size() && equals; i++) {
+				equals = list.get(i).equals(this.get(i));
+			}
+		}
+		return equals;
 	}
 
 }
