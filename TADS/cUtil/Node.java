@@ -70,5 +70,9 @@ public class Node<T> {
 	public void setNext(Node<T> next) {
 		this.next = next;
 	}
+	
+	public boolean equals(Node<T> node) {
+		return item.equals(node.getItem());
+	}
 
 }

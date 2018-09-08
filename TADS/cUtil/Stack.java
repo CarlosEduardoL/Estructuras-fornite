@@ -38,8 +38,5 @@ public interface Stack<T> {
 	 * @throws StackException - if the stack is empty
 	 */
 	public T pop( ) throws StackException;
-	//Pre: none
-	//Post: If stack is not empty, the item on the top is removed from the stack.
-	//Post: Throws StackException if the stack is empty.
 	
 }
