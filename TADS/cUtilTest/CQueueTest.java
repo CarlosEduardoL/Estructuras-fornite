@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
+
 import cUtil.CQueue;
 import cUtil.EmptyQueueExeption;
 import cUtil.Queue;
@@ -28,28 +30,76 @@ class CQueueTest {
 	@Test
 	void testEnqueue() throws EmptyQueueExeption {
 		setupStage1();
-		Integer tempPrimero;
 		
-		Queue<Integer> auxiliarQueue = new CQueue<>();
+		Integer[] arrayTest = new Integer[500];
 		
+		assertTrue(myQueue.isEmpty());
+		
+		//tempSize is the size of the queue before any dequeue
+		int tempSize = myQueue.getSize();
+		
+		//Enqueuing all elements
 		for (int i = 0; i < 500; i++) {
 			
-			auxiliarQueue.enqueue(i);
-			//Testing that no matter what gets into the queue, the first element is the last in get out
 			myQueue.enqueue(i);
-			tempPrimero = myQueue.dequeue();
-			assertTrue(tempPrimero == 0);
-			myQueue.enqueue(tempPrimero);
+			//Testing the front is always the same, no matter what gets int
+			assertEquals((int)myQueue.front(), 0);
+			//Assigning the same elements to an array to test later FIFO
+			arrayTest[i] = i;
 			
+			assertEquals(myQueue.getSize(), tempSize+i+1);
 			
-			
-//			arrayTest[i]= myQueue.dequeue();
-//			myQueue.enqueue(i);
-//			assertTrue(arrayTest[arrayTest.length-1] == i);
 		}
 		
-		System.out.println(myQueue.dequeue());
-		System.out.println(myQueue.dequeue());
-	}
+		for (int i = 0; i <500; i++) {
+			Integer temp = myQueue.dequeue();	
+			
+			//Testing FIFO
+			assertEquals(arrayTest[i] , temp);
+			
+		}
 
+		
+	}
+	
+	@Test
+	void testIsEmpty() {
+		
+		setupStage1();
+		assertTrue(myQueue.isEmpty());
+		
+		for (int i = 0; i < 1000; i++) {
+			myQueue.enqueue(i);
+			assertFalse(myQueue.isEmpty());
+		}
+	}
+	
+	@Test
+	void testDequeue() throws EmptyQueueExeption {
+		
+		setupStage1();
+		
+		Integer[] arrayTest = new Integer[500];
+		//Enqueuing all elements
+		for (int i = 0; i < 500; i++) {
+			
+			myQueue.enqueue(i);
+			//Assigning the same elements to an array to test later FIFO
+			arrayTest[i] = i;
+		}
+		
+		//tempSize is the size of the queue before any dequeue
+		int tempSize = myQueue.getSize();
+		for (int i = 0; i <500; i++) {
+			Integer temp = myQueue.dequeue();	
+			
+			//Testing FIFO
+			assertEquals(arrayTest[i] , temp);
+			//Testing whether length of the queue decreases when we dequeue an element
+			assertEquals(myQueue.getSize() , tempSize-1 - i);
+			
+
+		}
+	}
+	
 }
