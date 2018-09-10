@@ -40,6 +40,12 @@ public interface Node<T> {
 	public void setNext(Node<T> next);
 	
 	/**
+	 * change the previous node
+	 * @param next - generic node
+	 */
+	public void setPrevious(Node<T> next);
+	
+	/**
 	 * check if two nodes are equals
 	 * @param node - the other node
 	 * @return - a boolean that represent if the nodes are equals or not
