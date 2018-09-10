@@ -43,4 +43,13 @@ public interface Map<K,T> {
 	 */
 	public int tableLength();
 	
+	/**
+	 * this method convert the key of type K to integer </br> 
+	 * @param key - any key of type K
+	 * @return - an integer that represent a position in the array
+	 */
+	public int hash(K key);
+	
+	public void rehashing();
+	
 }

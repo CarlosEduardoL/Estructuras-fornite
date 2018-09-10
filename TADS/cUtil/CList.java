@@ -17,7 +17,7 @@ public class CList<T> implements List<T>{
 	/**
 	 * Constant that defines the factor with which the real array of the list grows
 	 */
-	private final int GROWTH_FACTOR = 2;
+	private final double GROWTH_FACTOR = 0.5;
 	
 	  //---------------------------------------\\
 	 //---------------parameters----------------\\
@@ -79,8 +79,8 @@ public class CList<T> implements List<T>{
 	public void add(T item) {
 		array[size] = item;
 		size++;
-		if (size == array.length) {
-			resizeArray();
+		if (size == array.length-1) {
+			resizeArray(1);
 		}
 	}
 
@@ -100,8 +100,8 @@ public class CList<T> implements List<T>{
 		for (int i = index + 1; i < size; i++) {
 			array[i] = temp[i-1];
 		}
-		if (size == array.length) {
-			resizeArray();
+		if (size == array.length-1) {
+			resizeArray(1);
 		}
 	}
 
@@ -123,6 +123,9 @@ public class CList<T> implements List<T>{
 			array[i] = temp[i+1];
 		}
 		size--;
+		if (size == array.length/4) {
+			resizeArray(-1);
+		}
 		
 	}
 
@@ -158,10 +161,10 @@ public class CList<T> implements List<T>{
 	}
 	
 	@SuppressWarnings("unchecked")
-	private void resizeArray() {
+	private void resizeArray(int factor) {
 		T[] temp = array.clone();
-		array = (T[]) new Object[array.length * GROWTH_FACTOR];
-		for (int i = 0; i < temp.length; i++) {
+		array = (T[]) new Object[(int) (array.length * (1 + GROWTH_FACTOR * factor) )];
+		for (int i = 0; i < temp.length && temp[i] != null; i++) {
 			array[i] = temp[i];
 		}
 	}

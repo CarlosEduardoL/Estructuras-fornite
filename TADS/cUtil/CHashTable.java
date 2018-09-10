@@ -9,16 +9,19 @@ package cUtil;
  */
 public class CHashTable<K, T> implements Map<K, T> {
 	
-	private static final int INITIAL_SIZE = 10;
+	private static final int INITIAL_SIZE = 100;
+	private static final double GROWTH_FACTOR = 0.5;
 	
+	private double alpha;
 	private List<HashNode<T, K>>[] array;
 	private int numberOfElements;
 	
 	/**
 	 * 
 	 */
+	@SuppressWarnings("unchecked")
 	public CHashTable() {
-		// TODO Auto-generated constructor stub
+		array = (List<HashNode<T, K>>[]) new Object[INITIAL_SIZE];
 	}
 
 	/* (non-Javadoc)
@@ -33,6 +36,10 @@ public class CHashTable<K, T> implements Map<K, T> {
 			array[hash(key)].add(new HashNode<T, K>(value, key));
 		}
 		numberOfElements++;
+		alpha = numberOfElements/array.length;
+		if (alpha > 0.7) {
+			rehashing();
+		}
 	}
 
 	/* (non-Javadoc)
@@ -66,6 +73,7 @@ public class CHashTable<K, T> implements Map<K, T> {
 					value = list.get(i).getData();
 					index = i;
 					numberOfElements--;
+					alpha = numberOfElements/array.length;
 				}
 			}
 		}
@@ -89,11 +97,31 @@ public class CHashTable<K, T> implements Map<K, T> {
 	 */
 	@Override
 	public int tableLength() {
-		return array.length;
+		return numberOfElements;
 	}
-	
-	private int hash(K key) {
+	/*
+	 * (non-Javadoc)
+	 * @see cUtil.Map#hash(java.lang.Object)
+	 */
+	public int hash(K key) {
 		return key.hashCode() % array.length;
+	}
+
+	/* (non-Javadoc)
+	 * @see cUtil.Map#rehashing()
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void rehashing() {
+		List<HashNode<T, K>>[] temp = array.clone();
+		array = (List<HashNode<T, K>>[]) new Object[(int) (array.length * (1 + GROWTH_FACTOR) )];
+		for (int i = 0; i < temp.length && temp[i] != null; i++) {
+			if (temp[i] != null) {
+				for (int j = 0; j < temp[i].size(); j++) {
+					set(temp[i].get(j).getKey(), temp[i].get(j).getData());
+				}
+			}
+		}
 	}
 
 }

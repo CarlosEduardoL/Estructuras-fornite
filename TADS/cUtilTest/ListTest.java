@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import cUtil.CList;
 import cUtil.List;
-import cUtil.SuperList;
+import cUtil.CList;
 
 class ListTest {
 
@@ -15,13 +15,13 @@ class ListTest {
 
 	@BeforeEach
 	void setUp1() {
-		list = new SuperList<Integer>();
+		list = new CList<Integer>();
 	}
 
 	@BeforeEach
 	void setUp2(){
 		Integer[] arr = {5,4,6};
-		list = new SuperList<Integer>(arr);
+		list = new CList<Integer>(arr);
 	}
 
 	@Test
