@@ -100,7 +100,14 @@ public class CNode<T> implements Node<T>{
 	 */
 	@Override
 	public Node<T> getPrevious() {
-		// TODO Auto-generated method stub
-		return null;
+		return previus;
+	}
+
+	/* (non-Javadoc)
+	 * @see cUtil.Node#setPrevious(cUtil.Node)
+	 */
+	@Override
+	public void setPrevious(Node<T> previus) {
+		this.previus = previus;
 	}
 }
