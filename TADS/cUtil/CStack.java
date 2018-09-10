@@ -37,7 +37,7 @@ public class CStack<T> implements Stack<T> {
 	 */
 	@Override
 	public void push(T newItem) {
-		Node<T> temp = new Node<T>(newItem);
+		Node<T> temp = new CNode<T>(newItem);
 		temp.setNext(top);
 		top = temp;
 		size++;

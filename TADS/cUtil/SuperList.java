@@ -53,7 +53,7 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	 * @param element
 	 */
 	public SuperList(T element) {
-		first = new Node<T>(element);
+		first = new CNode<T>(element);
 		last = first;
 	}
 	
@@ -70,10 +70,10 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	@Override
 	public void enqueue(T item) {
 		if (first == null) {
-			first = new Node<T>(item);
+			first = new CNode<T>(item);
 			last = first;
 		}else {
-			Node<T> temp = new Node<T>(item);
+			CNode<T> temp = new CNode<T>(item);
 			last.setNext(temp);
 			last = temp;
 		}
@@ -110,7 +110,7 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	 */
 	@Override
 	public void push(T newItem) {
-		Node<T> temp = new Node<T>(newItem);
+		CNode<T> temp = new CNode<T>(newItem);
 		temp.setNext(first);
 		first = temp;
 		size++;
@@ -147,14 +147,14 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	@Override
 	public void add(T item) {
 		if (first == null) {
-			first = new Node<T>(item);
+			first = new CNode<T>(item);
 			size++;
 		}else if(last == null){
-			last = new Node<T>(item);
+			last = new CNode<T>(item);
 			first.setNext(last);
 			size++;
 		}else {
-			last.setNext(new Node<T>(item));
+			last.setNext(new CNode<T>(item));
 			last = last.getNext();
 			size++;
 		}
@@ -173,7 +173,7 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 			actual = actual.getNext();
 		}
 		Node<T> temp = actual.getNext();
-		actual.setNext(new Node<T>(item));
+		actual.setNext(new CNode<T>(item));
 		actual.getNext().setNext(temp);
 		size++;
 	}
@@ -252,6 +252,19 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 			}
 		}
 		return equals;
+	}
+	
+	public boolean equals(SuperList<T> list) {
+		return first.equals(list.getFirstNode());
+	}
+
+	/* (non-Javadoc)
+	 * @see cUtil.Queue#getSize()
+	 */
+	@Override
+	public int getSize() {
+		// TODO Auto-generated method stub
+		return size;
 	}
 
 }

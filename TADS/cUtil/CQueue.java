@@ -56,10 +56,10 @@ public class CQueue<T> implements Queue<T> {
 	@Override
 	public void enqueue(T item){
 		if (first == null) {
-			first = new Node<T>(item);
+			first = new CNode<T>(item);
 			last = first;
 		}else {
-			Node<T> temp = new Node<T>(item);
+			CNode<T> temp = new CNode<T>(item);
 			last.setNext(temp);
 			last = temp;
 		}

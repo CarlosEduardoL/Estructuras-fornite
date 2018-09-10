@@ -8,6 +8,8 @@ package cUtil;
  *
  */
 public class CHashTable<K, T> implements Map<K, T> {
+	
+	private T[] array;
 
 	/* (non-Javadoc)
 	 * @see cUtil.Map#set(java.lang.Object, java.lang.Object)
