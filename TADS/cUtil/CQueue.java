@@ -59,7 +59,7 @@ public class CQueue<T> implements Queue<T> {
 			first = new CNode<T>(item);
 			last = first;
 		}else {
-			CNode<T> temp = new CNode<T>(item);
+			Node<T> temp = new CNode<T>(item);
 			last.setNext(temp);
 			last = temp;
 		}
