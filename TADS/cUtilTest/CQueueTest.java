@@ -26,6 +26,7 @@ class CQueueTest {
 		myQueue = new CQueue<>();
 		
 	}
+	
 
 	@Test
 	void testEnqueue() throws EmptyQueueExeption {
