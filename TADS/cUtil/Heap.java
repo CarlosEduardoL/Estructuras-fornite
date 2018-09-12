@@ -1,6 +1,3 @@
-/**
- * 
- */
 package cUtil;
 
 /**
@@ -55,3 +52,4 @@ public interface Heap <T>{
 	public int size();
 	
 }
+
