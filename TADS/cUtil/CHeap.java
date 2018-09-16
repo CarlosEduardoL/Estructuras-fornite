@@ -43,27 +43,40 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 	        }     
 		
 	}
-
-	/* (non-Javadoc)
-	 * @see cUtil.Heap#maxHeapify()
-	 */
+	
+	
 	@Override
 	public void maxHeapify() {
-		// TODO Auto-generated method stub
-        int index = size();
-        while (index > 1){
-            int parent = index / 2;
-            if (compare(array[index], array[parent]) >= 0)
-                //break if the parent is greater or equal to the current element
-                break;
-            swap(index,parent);
-            index = parent;
-        }     
-        
-		
+		maxHeapify(array, heapLast,0);
 	}
-
-
+	
+	public void maxHeapify(T arr[], int n, int i) {
+        int largest = i; // Initialize largest as root
+        int l = 2*i + 1; // left = 2*i + 1
+        int r = 2*i + 2; // right = 2*i + 2
+ 
+        // If left child is larger than root
+        if (l < n && arr[l].compareTo(arr[largest]) > 0)
+            largest = l;
+ 
+        // If right child is larger than largest so far
+        if (r < n && arr[r].compareTo(arr[largest])>0)
+            largest = r;
+ 
+        // If largest is not root
+        if (largest != i)
+        {
+            T swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+ 
+            // Recursively heapify the affected sub-tree
+            maxHeapify(arr, n, largest);
+        }
+	}
+	
+	
+	
 	/**
 	 * @param index
 	 * @param parent
@@ -81,6 +94,20 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 	@Override
 	public void heapSort() {
 		// TODO Auto-generated method stub
+		int n = array.length;
+		
+        // One by one extract an element from heap
+        for (int i=n-1; i>=0; i--)
+        {
+            // Move current root to end
+            T temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
+ 
+            // call max heapify on the reduced heap
+            maxHeapify(array, i, 0);
+        }
+		
 		
 	}
 
@@ -101,6 +128,17 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	@Override
+	public T[] buildMaxHeap(T[] arrayN){
+		T[] arrayMax = arrayN;
+		int n = arrayN.length;
+		
+        for (int i = n / 2 - 1; i >= 0; i--)
+            maxHeapify(arrayMax, n, i);
+		
+        return arrayMax;
+	}
 
 	/* (non-Javadoc)
 	 * @see cUtil.Heap#size()
@@ -108,7 +146,7 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 	@Override
 	public int size() {
 		// TODO Auto-generated method stub
-		return 0;
+		return heapLast;
 	}
 
 

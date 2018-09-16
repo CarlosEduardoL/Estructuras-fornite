@@ -50,6 +50,12 @@ public interface Heap <T>{
 	 * @return size - Is the size of the heap
 	 */
 	public int size();
+
+	/**
+	 * @param array
+	 * @return
+	 */
+	public T[] buildMaxHeap(T[] array);
 	
 }
 
