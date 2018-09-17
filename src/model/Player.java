@@ -15,8 +15,8 @@ public class Player {
 	private int ping;
 	private int headShoots;
 	private int deads;
-	private boolean accuracy;
-	private boolean averageSurvivalTime;
+	private double accuracy;
+	private double averageSurvivalTime;
 	private int playedGames;
 	private int TimesInTopTen;
 	private int TimePlayed;
@@ -87,28 +87,28 @@ public class Player {
 	/**
 	 * @return the accuracy
 	 */
-	public boolean isAccuracy() {
+	public double isAccuracy() {
 		return accuracy;
 	}
 
 	/**
 	 * @param accuracy the accuracy to set
 	 */
-	public void setAccuracy(boolean accuracy) {
+	public void setAccuracy(double accuracy) {
 		this.accuracy = accuracy;
 	}
 
 	/**
 	 * @return the averageSurvivalTime
 	 */
-	public boolean isAverageSurvivalTime() {
+	public double isAverageSurvivalTime() {
 		return averageSurvivalTime;
 	}
 
 	/**
 	 * @param averageSurvivalTime the averageSurvivalTime to set
 	 */
-	public void setAverageSurvivalTime(boolean averageSurvivalTime) {
+	public void setAverageSurvivalTime(double averageSurvivalTime) {
 		this.averageSurvivalTime = averageSurvivalTime;
 	}
 
