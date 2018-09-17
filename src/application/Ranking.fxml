@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea id="area" fx:id="area" editable="false" layoutX="177.0" prefHeight="549.0" prefWidth="510.0">
+         <font>
+            <Font name="Times New Roman" size="35.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="137.0" fitWidth="223.0" layoutX="682.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/rankingMen.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="166.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/ranking.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/rankingMen2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="682.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/rankingMen3.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

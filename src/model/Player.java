@@ -154,13 +154,24 @@ public class Player implements Comparable<Player>{
 		TimePlayed = timePlayed;
 	}
 
+	public int getSkill() {
+		return (int) (((((double) kills / deads)*25) + (headShoots*10) + (averageSurvivalTime * 5) + (TimesInTopTen * 20) + (TimePlayed * 5) - (ping * 30))/100);
+	}
+	
 	/* (non-Javadoc)
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	@Override
 	public int compareTo(Player o) {
+		return getSkill()-o.getSkill();
+	}
+
+	/**
+	 * @return
+	 */
+	public String getNickName() {
 		// TODO Auto-generated method stub
-		return 0;
+		return nickName;
 	}
 
 }
