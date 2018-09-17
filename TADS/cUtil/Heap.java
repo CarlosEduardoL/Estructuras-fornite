@@ -57,4 +57,6 @@ public interface Heap <T>{
 	 */
 	public T[] buildMaxHeap(T[] array);
 	
+	public T getElement(int index);
+	
 }

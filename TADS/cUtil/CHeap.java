@@ -3,13 +3,14 @@
  */
 package cUtil;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 /**
  * @author Santiago Chasqui
  * @author Carlos Eduardo Lizalda V.
  */
-public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
+public class CHeap <T extends Comparable<? super T>> implements Heap<T> {
 
 	/**
 	 * Constant that defines the initial size of the actual array of the heap
@@ -28,10 +29,10 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 	/**
 	 * 
 	 */
-	public CHeap(int maxSize) {
+	public CHeap() {
 
-		array = (T[]) new Object[maxSize + 1];
-		capacity = maxSize;
+		capacity = INITIAL_SIZE+1;
+		array = (T[]) new Comparable[capacity];
 		heapLast = 0;
 
 	}
@@ -42,11 +43,15 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 	@Override
 	public void add(T element) {
 
-		if (size() == capacity) {
+		if (heapLast == capacity) {
 			resizeArray(1);
+			System.out.println("Flag in add - class CHEAP");
 		}
+		
 		heapLast++;
-		array[heapLast] = element;
+		int i = heapLast - 1;
+		array[i] = element;
+		
 		maxHeapify();    
 
 	}
@@ -54,20 +59,21 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 
 	@Override
 	public void maxHeapify() {
-		maxHeapify(array, heapLast,0);
+		
+		maxHeapify(array, 0);
 	}
 
-	public void maxHeapify(T arr[], int n, int i) {
+	public void maxHeapify(T arr[], int i) {
 		int largest = i; // Initialize largest as root
 		int l = 2*i + 1; // left = 2*i + 1
 		int r = 2*i + 2; // right = 2*i + 2
 
-		// If left child is larger than root
-		if (l < n && arr[l].compareTo(arr[largest]) > 0)
+		// If left child is larger than roots
+		if (l < heapLast && arr[l].compareTo((T)arr[largest]) > 0)
 			largest = l;
-
+		else largest = i;
 		// If right child is larger than largest so far
-		if (r < n && arr[r].compareTo(arr[largest])>0)
+		if ( r < heapLast && arr[r].compareTo((T)arr[largest])>0)
 			largest = r;
 
 		// If largest is not root
@@ -78,7 +84,7 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 			arr[largest] = swap;
 
 			// Recursively heapify the affected sub-tree
-			maxHeapify(arr, n, largest);
+			maxHeapify(arr, largest);
 		}
 	}
 
@@ -165,13 +171,20 @@ public class CHeap <T extends Comparable<T>> implements Heap<T> , Comparator<T>{
 		}
 	}
 
+
+
 	/* (non-Javadoc)
-	 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
+	 * @see cUtil.Heap#getElement(int)
 	 */
 	@Override
-	public int compare(T o1, T o2) {
+	public T getElement(int index) {
 		// TODO Auto-generated method stub
-		return ((T)o1).compareTo((T)o2);
+		if(index <= heapLast && index>=0) {
+			
+		}else {
+			//HeapOutOfBounds Exception
+		}
+		return array[index];
 	}
 
 
