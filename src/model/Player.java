@@ -8,7 +8,7 @@ package model;
  * @author Santiago Chasqui Cordoba
  *
  */
-public class Player {
+public class Player implements Comparable<Player>{
 	
 	private String nickName;
 	private int kills;
@@ -152,6 +152,15 @@ public class Player {
 	 */
 	public void setTimePlayed(int timePlayed) {
 		TimePlayed = timePlayed;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+	 */
+	@Override
+	public int compareTo(Player o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
