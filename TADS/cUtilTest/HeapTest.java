@@ -8,9 +8,10 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import cUtil.CHeap;
+//import cUtil.CHeap;
 import cUtil.CList;
 import cUtil.Heap;
+import cUtil.SCHeap;
 
 /**
  * @author Santiago
@@ -21,7 +22,7 @@ public class HeapTest {
 	private Heap<Integer> heap;
 	@BeforeEach
 	void setUp1(){
-		heap = new CHeap<Integer>();
+		heap = new SCHeap<Integer>(10);
 
 	}
 
@@ -48,7 +49,7 @@ public class HeapTest {
 	
 	void printHeap() {
 		
-		for (int i = 0; i < heap.size(); i++) {
+		for (int i = 1; i <= heap.size(); i++) {
 			System.out.println(heap.getElement(i));
 		}
 	}

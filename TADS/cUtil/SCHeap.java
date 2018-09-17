@@ -35,9 +35,9 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 	private void bubbleUp() {
         int index = size();
         
-        while (hasParent(index)
-                && (parent(index).compareTo(array[index]) > 0)) {
+        while (hasParent(index) && (parent(index).compareTo(array[index]) <  0)) {
             // parent/child are out of order; swap them
+        	
             swap(index, parentIndex(index));
             index = parentIndex(index);
         }        
@@ -138,7 +138,6 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 	public void heapSort() {
 		// TODO Auto-generated method stub
 		int n = size();
-		System.out.println(n);
 
 		// One by one extract an element from heap
 		for (int i=n/2; i>0; i--)
