@@ -31,11 +31,13 @@ public class HeapTest {
 		
 		setUp1();
 //		1, 2, 3, 4, 7, 8, 9, 10, 14, 16 
+		heap.add(7);
 		heap.add(1);
 		heap.add(2);
 		heap.add(3);
 		heap.add(4);
 		heap.add(5);
+		heap.add(0);
 //		heap.add(7);
 //		heap.add(8);
 //		heap.add(9);
