@@ -5,15 +5,26 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import cUtil.CHashTable;
+import cUtil.Map;
+
 public class Game {
 	
 	Ranking ranking;
+	Map<String, String> developers;
 	
 	/**
 	 * @throws IOException 
 	 * 
 	 */
 	public Game() throws IOException {
+		developers = new CHashTable<String, String>(4);
+		developers.set("CARLOS", "CARLOS");
+		developers.set("SANTIAGO", "SANTIAGO");
+		developers.set("NELSON", "NELSON");
+		developers.set("SARA", "SARA");
+		
+		
 		BufferedReader reader = new BufferedReader(new FileReader(new File("PlayerData.txt")));
 		String player = "";
 		String temp;
@@ -39,7 +50,16 @@ public class Game {
 			ranking.addPlayer(p);
 		}
 		
+		reader.close();
 		
+	}
+	
+	public boolean checkDeveloper(String name,String pass) {
+		boolean isDeveloper = false;
+		if (developers.get(name) != null) {
+			isDeveloper = developers.get(name).equals(pass);
+		}
+		return isDeveloper;
 	}
 
 	public Ranking getRanking() {

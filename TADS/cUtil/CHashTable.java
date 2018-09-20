@@ -21,7 +21,11 @@ public class CHashTable<K, T> implements Map<K, T> {
 	 */
 	@SuppressWarnings("unchecked")
 	public CHashTable() {
-		array = (List<HashNode<T, K>>[]) new Object[INITIAL_SIZE];
+		array = (List<HashNode<T, K>>[]) new List[INITIAL_SIZE];
+	}
+	
+	public CHashTable(int size) {
+		array = (List<HashNode<T, K>>[]) new List[size];
 	}
 
 	/* (non-Javadoc)
@@ -104,7 +108,7 @@ public class CHashTable<K, T> implements Map<K, T> {
 	 * @see cUtil.Map#hash(java.lang.Object)
 	 */
 	public int hash(K key) {
-		return key.hashCode() % array.length;
+		return Math.abs(key.hashCode() % array.length);
 	}
 
 	/* (non-Javadoc)
@@ -114,8 +118,8 @@ public class CHashTable<K, T> implements Map<K, T> {
 	@Override
 	public void rehashing() {
 		List<HashNode<T, K>>[] temp = array.clone();
-		array = (List<HashNode<T, K>>[]) new Object[(int) (array.length * (1 + GROWTH_FACTOR) )];
-		for (int i = 0; i < temp.length && temp[i] != null; i++) {
+		array = (List<HashNode<T, K>>[]) new List[(int) (array.length * (1 + GROWTH_FACTOR) )];
+		for (int i = 0; i < temp.length; i++) {
 			if (temp[i] != null) {
 				for (int j = 0; j < temp[i].size(); j++) {
 					set(temp[i].get(j).getKey(), temp[i].get(j).getData());

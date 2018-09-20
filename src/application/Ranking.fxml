@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RankingController">
    <children>
       <TextArea id="area" fx:id="area" editable="false" layoutX="177.0" prefHeight="549.0" prefWidth="510.0">
          <font>
-            <Font name="Times New Roman" size="35.0" />
+            <Font name="Times New Roman" size="30.0" />
          </font>
       </TextArea>
       <ImageView fitHeight="137.0" fitWidth="223.0" layoutX="682.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
@@ -33,5 +34,17 @@
             <Image url="@../../data/rankingMen3.png" />
          </image>
       </ImageView>
+      <Button layoutX="25.0" layoutY="250.0" mnemonicParsing="false" onAction="#goToHomePage" text="Home" underline="true">
+         <graphic>
+            <ImageView fitHeight="67.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../data/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

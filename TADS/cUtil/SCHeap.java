@@ -145,7 +145,7 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 			// call max heapify on the reduced heap
 			maxHeapify(array, n, i);
 		}
-		for (int i=n-1; i>=0; i--)
+		for (int i=n-1; i>0; i--)
         {
 			// Move current root to end
 			T temp = array[1];
@@ -206,6 +206,9 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 	}
 	
 	public T getMin(){
+		if (corretion > capacity) {
+			corretion = 0;
+		}
 		return array[corretion++];
 	}
 

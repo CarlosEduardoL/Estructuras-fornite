@@ -29,43 +29,14 @@ public class Main extends Application {
 			
 			Game g = new Game();
 			
-			Parent root = FXMLLoader.load(getClass().getResource("/application/Ranking.fxml"));
-			Scene scene = new Scene(root,889,549);
+			Parent root = FXMLLoader.load(getClass().getResource("/application/Login.fxml"));
+			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setTitle("Login");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 			
-			Player[] ps = g.getRanking().getRanking(); 
-			TextArea t = (TextArea) root.lookup("#area");
-			
-			for (int i = 1; i < ps.length; i++) {
-				if (ps[i]!=null) {
-					t.setText(t.getText() + i + ") " + ps[i].getNickName() + "           Skill:" + ps[i].getSkill() + "\n" );
-				}
-			}
-			
-//			BufferedReader reader = new BufferedReader(new FileReader(new File("PlayerData.txt")));
-//			String name = "";
-//			String temp;
-//			while((temp = reader.readLine()) != null) {
-//				name += temp + " ";
-//			}
-//			
-//			String[] names = name.split(" ");
-//			for (int i = 0; i < names.length; i+=2) {
-//				System.out.println(
-//						names[i] +" "+ 						//NickName
-//						(int)(Math.random() * 100000) +" "+	//kills
-//						(int)(Math.random()* 600)+ " "+ 		//ping
-//						(int)(Math.random() * 10) +" "+ 	//head shoots
-//						(int)(Math.random() * 10) +" " + 	//deads
-//						Math.random() +" "+ 				// accuracy
-//						Math.random()*120 + 	" "+				// averangeSurvivalTime
-//						(int)(Math.random()* 10000)+ " " + 	// played games
-//						(int)(Math.random() * 10) +" "+ 	// times in top ten
-//						(int)(Math.random() * 10000) );		// time played
-//			}
-			
+						
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="662.0" fitWidth="1130.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/backgroundLogin.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="266.0" layoutY="100.0" prefHeight="449.0" prefWidth="397.0">
+         <children>
+            <ImageView fitHeight="375.0" fitWidth="397.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../data/fondo-blanco.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="375.0" fitWidth="397.0" layoutY="223.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../data/fondo-blanco.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="109.0" layoutX="146.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../data/login.png" />
+               </image>
+            </ImageView>
+            <TextField id="name" fx:id="name" layoutX="42.0" layoutY="136.0" prefHeight="25.0" prefWidth="316.0" promptText="Name">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <PasswordField fx:id="pass" layoutX="42.0" layoutY="223.0" prefHeight="25.0" prefWidth="316.0" promptText="password">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </PasswordField>
+            <Button layoutX="129.0" layoutY="299.0" mnemonicParsing="false" onAction="#singIn" prefHeight="42.0" prefWidth="142.0" text="Sign in">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="59.0" fitWidth="316.0" layoutX="306.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/title.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
