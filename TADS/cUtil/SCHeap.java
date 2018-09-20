@@ -7,6 +7,7 @@ import java.util.Comparator;
 
 /**
  * @author Carlos Eduardo Lizalda Valencia
+ * @author Santiago Chasqui Córdoba
  *
  */
 public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
@@ -83,7 +84,16 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 		heapLast++;
 		array[heapLast] = element;
 //		maxHeapify(); 
-		bubbleUp();
+		
+		int n = size();
+
+		// One by one extract an element from heap
+		for (int i=n/2; i>0; i--)
+		{
+			// call max heapify on the reduced heap
+			maxHeapify(array, n+1, i);
+		}
+		
 
 	}
 
@@ -182,7 +192,7 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 		int n = arrayN.length;
 
 		for (int i = n / 2 - 1; i >= 0; i--)
-			maxHeapify(arrayMax, n, i);
+			maxHeapify(arrayMax, n+1, i);
 
 		return arrayMax;
 	}
