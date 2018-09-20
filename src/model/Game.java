@@ -6,12 +6,22 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import cUtil.CHashTable;
+import cUtil.CList;
 import cUtil.Map;
+import cUtil.SCHeap;
 
 public class Game {
 	
-	Ranking ranking;
-	Map<String, String> developers;
+	public final static double PROSKILL = 40;
+	public final static double GOODPING = 200;
+	
+	private Ranking ranking;
+	private Map<String, String> developers;
+	private SCHeap<Player> heapPros;
+	private SCHeap<Player> heapProsWithLag;
+	private SCHeap<Player> heapNoobs;
+	private SCHeap<Player> heapNoobsWithLag;
+	private CList<Match> matches;
 	
 	/**
 	 * @throws IOException 
@@ -61,8 +71,63 @@ public class Game {
 		}
 		return isDeveloper;
 	}
+	
+	
 
 	public Ranking getRanking() {
 		return ranking;
 	}
+	
+	public void addPlayer(Player newPlayer) {
+		
+		if(newPlayer.getPing() <= GOODPING && newPlayer.getSkill()>=PROSKILL) {
+			heapPros.add(newPlayer);
+		}else if(newPlayer.getPing() > GOODPING && newPlayer.getSkill()>PROSKILL) {
+			heapProsWithLag.add(newPlayer);
+		}else if(newPlayer.getPing() > GOODPING && newPlayer.getSkill()<PROSKILL) {
+			heapNoobs.add(newPlayer);
+		}else {
+			heapNoobsWithLag.add(newPlayer);
+		}
+	}
+	
+	public void breakMatches() {
+		Player[] temp = new Player[100];
+		for (int i = 1; i < heapPros.size(); i++) {
+			if(i%100 == 0) {
+				matches.add(new Match(temp));
+			}else {
+				
+				temp[i-1] = heapPros.getElement(i);
+			}
+		}
+		
+		for (int i = 1; i < heapProsWithLag.size(); i++) {
+			if(i%100 == 0) {
+				matches.add(new Match(temp));
+			}else {
+				
+				temp[i-1] = heapProsWithLag.getElement(i);
+			}
+		}
+		
+		for (int i = 1; i < heapNoobs.size(); i++) {
+			if(i%100 == 0) {
+				matches.add(new Match(temp));
+			}else {
+				
+				temp[i-1] = heapNoobs.getElement(i);
+			}
+		}
+		
+		for (int i = 1; i < heapNoobsWithLag.size(); i++) {
+			if(i%100 == 0) {
+				matches.add(new Match(temp));
+			}else {
+				
+				temp[i-1] = heapNoobsWithLag.getElement(i);
+			}
+		}
+	}
+	
 }

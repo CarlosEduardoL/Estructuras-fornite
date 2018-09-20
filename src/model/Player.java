@@ -3,6 +3,8 @@
  */
 package model;
 
+import cUtil.CQueue;
+
 /**
  * @author Carlos Eduardo Lizalda Valencia
  * @author Santiago Chasqui Cordoba
@@ -11,6 +13,8 @@ package model;
 public class Player implements Comparable<Player>{
 	
 	private String nickName;
+	
+	//STATS 
 	private int kills;
 	private int ping;
 	private int headShoots;
@@ -20,6 +24,14 @@ public class Player implements Comparable<Player>{
 	private int playedGames;
 	private int TimesInTopTen;
 	private int TimePlayed;
+	
+	//MATCH ATRIBBS
+	private boolean isOnline;
+	private boolean isFindingMatch;
+	
+	//IN GAME ATRIBBS
+	private Inventory inventory;
+	
 	
 	/**
 	 * 
@@ -155,7 +167,7 @@ public class Player implements Comparable<Player>{
 	}
 
 	public int getSkill() {
-		return (int) (((((double) kills / deads)*25) + (headShoots*10) + (averageSurvivalTime * 5) + (TimesInTopTen * 20) + (TimePlayed * 5) - (ping * 30))/100);
+		return (int) (((((double) kills / deads)*10) + ((headShoots/25)) + (averageSurvivalTime * 0.1) + (TimesInTopTen * 0.3) + (TimePlayed * 0.01)));
 	}
 	
 	/* (non-Javadoc)
@@ -173,5 +185,7 @@ public class Player implements Comparable<Player>{
 		// TODO Auto-generated method stub
 		return nickName;
 	}
+	
+
 
 }

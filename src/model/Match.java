@@ -9,6 +9,13 @@ package model;
  */
 public class Match {
 	
+	/**
+	 * 
+	 */
+	public Match(Player[] players) {
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	public double standardDeviation(int[] latencyArray) {
 		

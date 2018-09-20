@@ -38,6 +38,7 @@ public class HeapTest {
 		heap.add(4);
 		heap.add(5);
 		heap.add(0);
+		heap.add(1000);
 //		heap.add(7);
 //		heap.add(8);
 //		heap.add(9);
