@@ -5,10 +5,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import cUtil.CHashTable;
-import cUtil.CList;
 import cUtil.List;
 import cUtil.Map;
-import cUtil.SCHeap;
 
 public class Game {
 	
@@ -20,7 +18,6 @@ public class Game {
 	
 	private PingFilter<Integer, Player> pingFilter;
 	private List<Match> matches;
-	private int matchCounter;
 	
 	/**
 	 * @throws IOException 
@@ -32,8 +29,6 @@ public class Game {
 		developers.set("SANTIAGO", "SANTIAGO");
 		developers.set("NELSON", "NELSON");
 		developers.set("SARA", "SARA");
-		
-		matchCounter = 0;
 		
 		
 		developers.set("SARA", "SARA");	
@@ -89,22 +84,20 @@ public class Game {
 			pingFilter.set(players[i].getPing(), players[i]);
 			i++;
 		}
+		
+		matches = pingFilter.getReadyMatches();
 	}
 	
 	public void addPlayer(Player newPlayer) {
 		
-		
 	}
 	
-	public void breakMatches() {
-	}
-	
+	/**
+	 * Not yet Implemented
+	 * @param index
+	 */
 	public void finishMatch(int index) {
 		
-	}
-	
-	public void addMatch(Match newMatch) {
-		matches.add(newMatch);
 	}
 	
 }

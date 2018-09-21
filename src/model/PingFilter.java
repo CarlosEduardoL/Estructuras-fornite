@@ -3,6 +3,7 @@
  */
 package model;
 
+import cUtil.CList;
 import cUtil.CQueue;
 import cUtil.EmptyQueueExeption;
 import cUtil.HashNode;
@@ -21,6 +22,7 @@ public class PingFilter<K,T> implements Map<K,T>{
 	private double alpha;
 	private CQueue<Player>[] queue;
 	private int numberOfElements;
+	private CList<Match> readyMatches;
 	
 	/**
 	 * 
@@ -48,7 +50,7 @@ public class PingFilter<K,T> implements Map<K,T>{
 					try {
 						setOfReadyPlayers[i] = queue[hash(key)].dequeue();
 						if(i == 99) {
-							
+							readyMatches.add(new Match(setOfReadyPlayers));
 						}
 					} catch (EmptyQueueExeption e) {
 						// TODO Auto-generated catch block
@@ -151,5 +153,8 @@ public class PingFilter<K,T> implements Map<K,T>{
 		return queue.length;
 	}
 	
+	public CList<Match> getReadyMatches(){
+		return readyMatches;
+	}
 
 }
