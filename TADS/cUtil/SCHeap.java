@@ -8,6 +8,7 @@ import java.util.Comparator;
 /**
  * @author Carlos Eduardo Lizalda Valencia
  * @author Santiago Chasqui Córdoba
+ * 
  *
  */
 public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {

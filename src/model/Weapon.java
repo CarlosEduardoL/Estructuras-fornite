@@ -11,6 +11,7 @@ public class Weapon {
 	 * 
 	 * @param type
 	 */
+	
 	public Weapon(String type, int ammunition) {
 		this.type = type;
 		this.ammunition = ammunition;
