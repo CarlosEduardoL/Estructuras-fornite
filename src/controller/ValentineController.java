@@ -70,7 +70,6 @@ public class ValentineController implements Initializable {
 		testPlayer = LoginController.game.getRanking().getRanking()[0];
 		button.setFocusTraversable(true);
 		button.requestFocus();
-		System.out.println(button.isFocused() + " " + button.isFocusTraversable());
 	}
 	
 	public void generateWeapon(ActionEvent event) throws StackException {
@@ -104,7 +103,6 @@ public class ValentineController implements Initializable {
 	}
 
 	public void move(KeyEvent event) {
-		System.out.println(button.getLayoutY());
 		if (event.getCode().equals(KeyCode.UP) && button.getLayoutY() > 0) {
 			button.setLayoutY(button.getLayoutY() - 5);
 		}else if (event.getCode().equals(KeyCode.DOWN) && button.getLayoutY() < MAX_Y) {

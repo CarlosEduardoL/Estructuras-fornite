@@ -49,7 +49,6 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 		heapLast++;
 		array[heapLast] = element;
 		
-		System.out.println("Pase" + heapLast);
 //		maxHeapify(); 
 		
 		int n = size();
