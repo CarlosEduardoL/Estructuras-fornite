@@ -39,7 +39,7 @@
 /Project/lab2-Fornite/Compile/DRL,Infinity
 /Project/lab2-Fornite/Design Review/Estimated Defect Density,NaN
 /Project/lab2-Fornite/HLD/Defects Injected per Hour To Date,Infinity
-/Project/lab2-Fornite/Code/Time,1585.0
+/Project/lab2-Fornite/Code/Time,1657.0
 /Project/lab2-Fornite/Design vs Code/Estimated Time Ratio,NaN
 /Project/lab2-Fornite/Design Review/Estimated Defects Injected per Hour,Infinity
 /Project/lab2-Fornite/Code/Estimated Time To Date,0.0
@@ -100,7 +100,7 @@
 /Project/lab2-Fornite/Planning/Defects Removed,0.0
 /Project/lab2-Fornite/Test/Defects Removed per Hour To Date,0.9999999999999999
 /Project/lab2-Fornite/Postmortem/Defect Density,Infinity
-/Project/lab2-Fornite/Code/Combined Time,1585.0
+/Project/lab2-Fornite/Code/Combined Time,1657.0
 /Project/lab2-Fornite/HLD/Estimated Defects Removed To Date,0.0
 /Project/lab2-Fornite/% Appraisal COQ To Date,0.25
 /Project/lab2-Fornite/New & Changed LOC To Date,2.0E-4
@@ -267,12 +267,12 @@
 /Project/lab2-Fornite/Postmortem/Estimated Defects Injected per Hour,NaN
 /Project/lab2-Fornite/PM/Defects Removed To Date,0.0
 /Project/lab2-Fornite/Test/Defect Injection Density To Date,0.0
-/Project/lab2-Fornite/Design vs Code/Time Ratio,0.15457413249211358
+/Project/lab2-Fornite/Design vs Code/Time Ratio,0.14785757392878696
 /Project/lab2-Fornite/Compile/Defects Injected per Hour To Date,4.999999999999999
 /Project/lab2-Fornite/Compile/Estimated Defect Injection Density To Date,Infinity
 /Project/lab2-Fornite/HLD/Phase_Color,#cc66ff
 /Project/lab2-Fornite/New_Objects_Prefix_List To Date,/To Date/PSP/All/New Objects/0
-/Project/lab2-Fornite/Quality_Profile_1,0.15457413249211358
+/Project/lab2-Fornite/Quality_Profile_1,0.14785757392878696
 /Project/lab2-Fornite/Child_List,PlanningDesignDesign ReviewCodeCode ReviewCompileTestPostmortem
 /Project/lab2-Fornite/Quality_Profile_2,0.0
 /Project/lab2-Fornite/Code Review/Appraisal Rate,Infinity
@@ -437,7 +437,7 @@
 /Project/lab2-Fornite/Base_Parts/0/Added To Date,0.0
 /Project/lab2-Fornite/% Failure COQ To Date,0.15
 /Project/lab2-Fornite/HLD/Estimated Time To Date,0.0
-/Project/lab2-Fornite/Time,2297.0
+/Project/lab2-Fornite/Time,2369.0
 /Project/lab2-Fornite/Reused Objects/0/LOC To Date,0.0
 /Project/lab2-Fornite/Design/Defects Injected per Hour To Date,1.9999999999999998
 /Project/lab2-Fornite/FILES_XML,,/pspDoc/custom.xml,/pspDoc/files.xml,
@@ -624,6 +624,7 @@
 !sep 17, 2018 02:49:22 PM!,137
 !sep 19, 2018 01:49:02 PM!,230
 !sep 20, 2018 12:40:47 AM!,649
+!sep 20, 2018 10:39:09 PM!,72
 <!-- start defects -->
 <defects>
 </defects>
