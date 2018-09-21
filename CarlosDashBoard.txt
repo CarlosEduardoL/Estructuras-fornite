@@ -1,0 +1,629 @@
+/Project/lab2-Fornite/HLD Review/Time To Date,0.0
+/Project/lab2-Fornite/Planning/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Code Review/Cumulative Defect Removal % To Date,0.7692307692307692
+/Project/lab2-Fornite/Compile/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Design Review vs Design/Estimated Time Ratio,NaN
+/Project/lab2-Fornite/Code/Defects Injected per Hour To Date,3.9999999999999996
+/Project/lab2-Fornite/Size,0.0
+/Project/lab2-Fornite/Code/Defect Density To Date,4.999999999999999
+/Project/lab2-Fornite/Design Review/Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Postmortem/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Base_Parts/0/Modified To Date,0.0
+/Project/lab2-Fornite/Postmortem/node,TAG
+/Project/lab2-Fornite/Test/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Code Review/Defects Removed per Hour To Date,6.0
+/Project/lab2-Fornite/Design Review/Defects Injected per Hour To Date,0.0
+/Project/lab2-Fornite/After Development/Defects Removed,0.0
+/Project/lab2-Fornite/Design Review/Time To Date,6.0E-5
+/Project/lab2-Fornite/Code/Defects Removed,0.0
+/Project/lab2-Fornite/Object LOC To Date,0.0
+/Project/lab2-Fornite/Design vs Code/Estimated Time Ratio To Date,Infinity
+/Project/lab2-Fornite/Code Review/Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Code/Estimated Defects Injected per Hour,NaN
+/Project/lab2-Fornite/Design/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Proxy Size To Date,0.0
+/Project/lab2-Fornite/Planning/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Code Review/Phase_Color,#00c000
+/Project/lab2-Fornite/Planning_Is_Done,1.0
+/Project/lab2-Fornite/Design/Defects Removed per Hour,0.0
+/Project/lab2-Fornite/Design Review/Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/Design Review/Defect Density,Infinity
+/Project/lab2-Fornite/Design vs Code/Time Ratio To Date,1.0
+/Project/lab2-Fornite/Postmortem/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Design Review/Appraisal Rate To Date,200.0
+/Project/lab2-Fornite/Design/Combined Defects Injected,0.0
+/Project/lab2-Fornite/Planning/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Before Development/Defects Injected,0.0
+/Project/lab2-Fornite/HLD Review/DRL To Date,Infinity
+/Project/lab2-Fornite/Base_Parts/0/Actual Base To Date,0.0
+/Project/lab2-Fornite/Compile/DRL,Infinity
+/Project/lab2-Fornite/Design Review/Estimated Defect Density,NaN
+/Project/lab2-Fornite/HLD/Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Code/Time,1585.0
+/Project/lab2-Fornite/Design vs Code/Estimated Time Ratio,NaN
+/Project/lab2-Fornite/Design Review/Estimated Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Code/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Design/Defects Injected per Hour,0.0
+/Project/lab2-Fornite/Code Review/Estimated Appraisal Rate,NaN
+/Project/lab2-Fornite/Time Estimating Error,NaN
+/Project/lab2-Fornite/Reassessment/Defects Removed To Date,0.0
+/Project/lab2-Fornite/Estimated Time/LPI To Date,0.0
+/Project/lab2-Fornite/Test/Time,0.0
+/Project/lab2-Fornite/Design Review/Defects Removed To Date,3.0E-6
+/Project/lab2-Fornite/Design/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Simple Project Tag,TAG
+/Project/lab2-Fornite/Reassessment/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Base LOC,0.0
+/Project/lab2-Fornite/Size To Date,2.0E-4
+/Project/lab2-Fornite/Reassessment/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Estimated Added & Modified Size/LPI To Date,0.0
+/Project/lab2-Fornite/Design Review/Estimated Time,0.0
+/Project/lab2-Fornite/Code/Defect Injection Density,Infinity
+/Project/lab2-Fornite/Normalization %/Defects Injected/PSP0-2 To Date,1.0
+/Project/lab2-Fornite/Estimated Quality_Profile_1,1.0
+/Project/lab2-Fornite/PM/Defects Removed,0.0
+/Project/lab2-Fornite/Quality_Profile_5 To Date,1.0
+/Project/lab2-Fornite/HLD Review/Appraisal Rate To Date,Infinity
+/Project/lab2-Fornite/Reassessment/Defect Density To Date,0.0
+/Project/lab2-Fornite/Design Review/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Design Review vs Design/Time Ratio To Date,0.5
+/Project/lab2-Fornite/Estimated Quality_Profile_4,1.0
+/Project/lab2-Fornite/Design Review/Estimated Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/Estimated Quality_Profile_5,1.0
+/Project/lab2-Fornite/Estimated Quality_Profile_2,1.0
+/Project/lab2-Fornite/Estimated Quality_Profile_3,1.0
+/Project/lab2-Fornite/Code Review/Estimated DRL To Date,NaN
+/Project/lab2-Fornite/Code Review/DRL,Infinity
+/Project/lab2-Fornite/Code/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Design/Node_Type,(Design)
+/Project/lab2-Fornite/Compile/Phase_Color,#ffe000
+/Project/lab2-Fornite/Reassessment/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/ESTIMATED Time To Date,0.0
+/Project/lab2-Fornite/Design Review/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Code/Defects Removed per Hour,0.0
+/Project/lab2-Fornite/Code/Defect Density,Infinity
+/Project/lab2-Fornite/LOC per Hour To Date,25.0
+/Project/lab2-Fornite/Quality_Phase_List,Design ReviewCode ReviewCompileTest
+/Project/lab2-Fornite/Estimated % Appraisal COQ,NaN
+/Project/lab2-Fornite/Postmortem/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Reassessment/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Design/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Design/Cumulative Defect Injection %,Infinity
+/Project/lab2-Fornite/Estimated_Time_Mismatch To Date,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Base_Parts/0/Base To Date,0.0
+/Project/lab2-Fornite/HLD Review vs HLD/Estimated Time Ratio,NaN
+/Project/lab2-Fornite/Test/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Code/Time To Date,1.2E-4
+/Project/lab2-Fornite/Design Review/Cumulative Defect Removal %,Infinity
+/Project/lab2-Fornite/Planning/Defects Removed,0.0
+/Project/lab2-Fornite/Test/Defects Removed per Hour To Date,0.9999999999999999
+/Project/lab2-Fornite/Postmortem/Defect Density,Infinity
+/Project/lab2-Fornite/Code/Combined Time,1585.0
+/Project/lab2-Fornite/HLD/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/% Appraisal COQ To Date,0.25
+/Project/lab2-Fornite/New & Changed LOC To Date,2.0E-4
+/Project/lab2-Fornite/Postmortem/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/% New Reused To Date,0.0
+/Project/lab2-Fornite/HLD Review vs HLD/Time Ratio To Date,Infinity
+/Project/lab2-Fornite/Bottom_Up_Estimated Time To Date,NaN
+/Project/lab2-Fornite/Design/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Postmortem/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Design/Estimated Defects Injected per Hour,NaN
+/Project/lab2-Fornite/HLD vs Design/Estimated Time Ratio,NaN
+/Project/lab2-Fornite/Design/Combined Defects Removed,0.0
+/Project/lab2-Fornite/Size Estimating Error To Date,Infinity
+/Project/lab2-Fornite/Estimated Quality_Profile_1 To Date,1.0
+/Project/lab2-Fornite/PROBE_TARGET_SIZE_METRIC_NAME,Added & Modified Size
+/Project/lab2-Fornite/Compile/Cumulative Defect Removal %,Infinity
+/Project/lab2-Fornite/HLD Review/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Estimated New & Changed KLOC To Date,0.0
+/Project/lab2-Fornite/Estimated Added & Modified Size/UPI To Date,0.0
+/Project/lab2-Fornite/Code Review/Appraisal Rate To Date,200.0
+/Project/lab2-Fornite/Estimated Base LOC To Date,0.0
+/Project/lab2-Fornite/% COQ To Date,0.4
+/Project/lab2-Fornite/Code/Cumulative Defect Injection %,Infinity
+/Project/lab2-Fornite/Code/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Base_Parts/0/Deleted To Date,0.0
+/Project/lab2-Fornite/Code Review/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Quality Profile Capable,TAG
+/Project/lab2-Fornite/New & Changed KLOC,0.0
+/Project/lab2-Fornite/PSP0 Tag,TAG
+/Project/lab2-Fornite/Test/Phase_Color,#ff9900
+/Project/lab2-Fornite/FreezeFlag/.*Estimated.*,0.0
+/Project/lab2-Fornite/Added & Modified Size,0.0
+/Project/lab2-Fornite/Code Review/Defects Injected per Hour To Date,0.0
+/Project/lab2-Fornite/Test/Defects Injected,0.0
+/Project/lab2-Fornite/Design Review/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/AFR,Infinity
+/Project/lab2-Fornite/HLD/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Estimated Added & Modified Size To Date,0.0
+/Project/lab2-Fornite/Code Review/Defects Injected,0.0
+/Project/lab2-Fornite/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Estimated New & Changed LOC To Date,0.0
+/Project/lab2-Fornite/Compile/Defects Injected To Date,1.0E-6
+/Project/lab2-Fornite/Planning_Is_Done To Date,1.0
+/Project/lab2-Fornite/HLD Review/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Total LOC,0.0
+/Project/lab2-Fornite/Design Review/Estimated DRL,Infinity
+/Project/lab2-Fornite/Test/Defects Removed per KLOC To Date,4.999999999999999
+/Project/lab2-Fornite/Reassessment/Time To Date,0.0
+/Project/lab2-Fornite/Compile/Defect Injection Density,Infinity
+/Project/lab2-Fornite/Test/Cumulative Defect Removal % To Date,1.0
+/Project/lab2-Fornite/Code Review/Defect Density To Date,29.999999999999996
+/Project/lab2-Fornite/Test/Defect Injection Density,Infinity
+/Project/lab2-Fornite/After Development/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Code/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Reassessment/Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Code Review/Estimated Appraisal Rate To Date,Infinity
+/Project/lab2-Fornite/Estimated New & Changed LOC/LPI To Date,0.0
+/Project/lab2-Fornite/Test/leaf,TAG
+/Project/lab2-Fornite/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/SIZE_METRIC_NAME,New & Changed LOC
+/Project/lab2-Fornite/Code Review/Defects Removed,0.0
+/Project/lab2-Fornite/Reassessment/Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Design/Combined Defects Removed To Date,3.0E-6
+/Project/lab2-Fornite/% COQ,0.0
+/Project/lab2-Fornite/HLD vs Design/Estimated Time Ratio To Date,Infinity
+/Project/lab2-Fornite/Base Additions LOC To Date,0.0
+/Project/lab2-Fornite/PROBE_INPUT_SIZE_METRIC_NAME,Estimated Proxy Size
+/Project/lab2-Fornite/Planning/node,TAG
+/Project/lab2-Fornite/Modified LOC,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Defects Removed per Hour,NaN
+/Project/lab2-Fornite/New Objects LOC To Date,0.0
+/Project/lab2-Fornite/Design/Phase_Color,#aaaaff
+/Project/lab2-Fornite/PSP To Date Subset Prefix,/To Date/PSP/All
+/Project/lab2-Fornite/Code Review/Estimated DRL,Infinity
+/Project/lab2-Fornite/PROBE_NO_EDIT_INPUT,TAG
+/Project/lab2-Fornite/Compile/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Test/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Test/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Estimated Total LOC To Date,0.0
+/Project/lab2-Fornite/Phase_List,PlanningDesignDesign ReviewCodeCode ReviewCompileTestPostmortem
+/Project/lab2-Fornite/Code Review/% Phase Yield,Infinity
+/Project/lab2-Fornite/Productivity To Date,25.0
+/Project/lab2-Fornite/PSP Project,TAG
+/Project/lab2-Fornite/Test/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Planning/Defects Injected per Hour,0.0
+/Project/lab2-Fornite/Code Review/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Code Review/Defect Density,Infinity
+/Project/lab2-Fornite/Code/Phase_Color,#66ff66
+/Project/lab2-Fornite/Compile/Cumulative Defect Removal % To Date,0.923076923076923
+/Project/lab2-Fornite/Code/Estimated Time,NaN
+/Project/lab2-Fornite/Postmortem/Time,0.0
+/Project/lab2-Fornite/Code Review/Cumulative Defect Removal %,Infinity
+/Project/lab2-Fornite/Reassessment/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/HLD Review/Defects Removed To Date,0.0
+/Project/lab2-Fornite/PSP Rollup Eligible,TAG
+/Project/lab2-Fornite/Design Review/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Estimated Size To Date,0.0
+/Project/lab2-Fornite/Quality_Profile_4 To Date,1.0000000000000002
+/Project/lab2-Fornite/PROBE_Input_Mismatch To Date,0.0
+/Project/lab2-Fornite/Code Review/Defect Injection Density,Infinity
+/Project/lab2-Fornite/PROBE_Time_Output_Mismatch To Date,0.0
+/Project/lab2-Fornite/Base Added LOC To Date,0.0
+/Project/lab2-Fornite/Design Review/Defects Injected,0.0
+/Project/lab2-Fornite/PQI To Date,1.0
+/Project/lab2-Fornite/Estimated New & Changed KLOC,NaN
+/Project/lab2-Fornite/Planning/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Code Review/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Estimated New Reused LOC To Date,0.0
+/Project/lab2-Fornite/Test/Defects Removed,0.0
+/Project/lab2-Fornite/Total LOC To Date,2.0E-4
+/Project/lab2-Fornite/Design Review/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Estimated % COQ,NaN
+/Project/lab2-Fornite/Compile/Estimated Defects Injected per Hour,NaN
+/Project/lab2-Fornite/Estimated AFR,NaN
+/Project/lab2-Fornite/Code Review vs Code/Estimated Time Ratio,NaN
+/Project/lab2-Fornite/Code/node,TAG
+/Project/lab2-Fornite/Time To Date,4.8E-4
+/Project/lab2-Fornite/Code/Defects Removed per Hour To Date,0.49999999999999994
+/Project/lab2-Fornite/PSP3_Cycle_Count To Date,0.0
+/Project/lab2-Fornite/Estimated % Reused To Date,Infinity
+/Project/lab2-Fornite/Design/node,TAG
+/Project/lab2-Fornite/HLD Review/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Estimated PQI To Date,1.0
+/Project/lab2-Fornite/Estimated Aggregate Size To Date,0.0
+/Project/lab2-Fornite/Compile/Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Code/Combined Estimated Time To Date,0.0
+/Project/lab2-Fornite/Defects Injected,0.0
+/Project/lab2-Fornite/Test/Cumulative Defect Removal %,Infinity
+/Project/lab2-Fornite/Design/Defects Removed per Hour To Date,0.0
+/Project/lab2-Fornite/Defects Injected per Hour To Date,1.6250000000000002
+/Project/lab2-Fornite/Code/Defects Injected per Hour,0.0
+/Project/lab2-Fornite/Estimated Reused LOC To Date,0.0
+/Project/lab2-Fornite/Design/Defect Density To Date,0.0
+/Project/lab2-Fornite/Estimated Base Added LOC To Date,0.0
+/Project/lab2-Fornite/Appraisal_Phase_List,Design ReviewCode Review
+/Project/lab2-Fornite/Estimated Productivity To Date,Infinity
+/Project/lab2-Fornite/Estimated % Failure COQ To Date,Infinity
+/Project/lab2-Fornite/Planning/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Design Review/DRL To Date,3.0000000000000004
+/Project/lab2-Fornite/PM/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Design/Estimated Time,NaN
+/Project/lab2-Fornite/Design Review/DRL,Infinity
+/Project/lab2-Fornite/CPI,NaN
+/Project/lab2-Fornite/PM/Time To Date,2.4E-5
+/Project/lab2-Fornite/Normalization %/Time/PSP3cycle To Date,0.9
+/Project/lab2-Fornite/Design Review/% Phase Yield To Date,0.75
+/Project/lab2-Fornite/Code/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Estimated Additions LOC To Date,0.0
+/Project/lab2-Fornite/Design/Estimated Defects Removed per Hour,NaN
+/Project/lab2-Fornite/Design Review/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/HLD Review/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Test/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/HLD/Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Code Review/Estimated Time,0.0
+/Project/lab2-Fornite/Postmortem/Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/AGGR_SIZE_METRIC_NAME_ABBR,KLOC
+/Project/lab2-Fornite/Design/Defect Injection Density To Date,19.999999999999996
+/Project/lab2-Fornite/Compile/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/HLD vs Design/Time Ratio To Date,0.0
+/Project/lab2-Fornite/Design Review/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/HLD/Time To Date,0.0
+/Project/lab2-Fornite/Planning/Defects Removed per Hour To Date,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Defects Injected per Hour,NaN
+/Project/lab2-Fornite/PM/Defects Removed To Date,0.0
+/Project/lab2-Fornite/Test/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Design vs Code/Time Ratio,0.15457413249211358
+/Project/lab2-Fornite/Compile/Defects Injected per Hour To Date,4.999999999999999
+/Project/lab2-Fornite/Compile/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/HLD/Phase_Color,#cc66ff
+/Project/lab2-Fornite/New_Objects_Prefix_List To Date,/To Date/PSP/All/New Objects/0
+/Project/lab2-Fornite/Quality_Profile_1,0.15457413249211358
+/Project/lab2-Fornite/Child_List,PlanningDesignDesign ReviewCodeCode ReviewCompileTestPostmortem
+/Project/lab2-Fornite/Quality_Profile_2,0.0
+/Project/lab2-Fornite/Code Review/Appraisal Rate,Infinity
+/Project/lab2-Fornite/Quality_Profile_3,1.0
+/Project/lab2-Fornite/Quality_Profile_4,1.0
+/Project/lab2-Fornite/Code Review/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Quality_Profile_5,0.0
+/Project/lab2-Fornite/Test/Estimated Defects Removed per Hour,NaN
+/Project/lab2-Fornite/PM/Time,0.0
+/Project/lab2-Fornite/HLD Review/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Code Review/Time To Date,6.0E-5
+/Project/lab2-Fornite/Test/Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Postmortem/leaf,TAG
+/Project/lab2-Fornite/Before Development/Estimated Defects Injected To Date,NaN
+/Project/lab2-Fornite/Compile/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Test/Node_Type,(Test)
+/Project/lab2-Fornite/Normalization %/Defects Removed/PSP3cycle To Date,1.0
+/Project/lab2-Fornite/Planning/Estimated Time,NaN
+/Project/lab2-Fornite/Defects per KLOC To Date,64.99999999999999
+/Project/lab2-Fornite/PROBE_Size_Output_Mismatch To Date,0.0
+/Project/lab2-Fornite/Yield_Phase_List,PlanningDesignDesign ReviewCodeCode Review
+/Project/lab2-Fornite/HLD Review/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Reused Objects/0/Actual LOC To Date,0.0
+/Project/lab2-Fornite/Estimated Yield,Infinity
+/Project/lab2-Fornite/Normalization %/Defects Removed/PSP3 To Date,1.0
+/Project/lab2-Fornite/Design Review/Cumulative Defect Removal % To Date,0.23076923076923078
+/Project/lab2-Fornite/Code/Node_Type,(Code)
+/Project/lab2-Fornite/Planning/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Compile/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Estimated % COQ To Date,Infinity
+/Project/lab2-Fornite/Modified LOC To Date,0.0
+/Project/lab2-Fornite/Compile/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Test/Estimated Time To Date,0.0
+/Project/lab2-Fornite/HLD/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/HLD/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Test/Estimated Defects Removed per KLOC To Date,Infinity
+/Project/lab2-Fornite/Added & Modified Size To Date,2.0E-4
+/Project/lab2-Fornite/Postmortem/Defects Removed To Date,0.0
+/Project/lab2-Fornite/Code/Combined Defects Removed To Date,7.0E-6
+/Project/lab2-Fornite/Compile/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Reused_Objects_Prefix_List To Date,/To Date/PSP/All/Reused Objects/0
+/Project/lab2-Fornite/Estimated Quality_Profile_2 To Date,1.0
+/Project/lab2-Fornite/Overhead_Phase_List,PlanningPostmortem
+/Project/lab2-Fornite/Compile/DRL To Date,10.0
+/Project/lab2-Fornite/Normalization %/Defects Removed/PSP0-2 To Date,1.0
+/Project/lab2-Fornite/Design Review/% Phase Yield,Infinity
+/Project/lab2-Fornite/Estimated New & Changed LOC/UPI To Date,0.0
+/Project/lab2-Fornite/Planning/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Design/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Compile/Node_Type,(Compile)
+/Project/lab2-Fornite/Postmortem/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Time,NaN
+/Project/lab2-Fornite/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Before Development/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Planning/Phase_Color,#cdaa7d
+/Project/lab2-Fornite/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Base_Additions_Prefix_List To Date,
+/Project/lab2-Fornite/Reused LOC To Date,0.0
+/Project/lab2-Fornite/Design/Defects Removed To Date,0.0
+/Project/lab2-Fornite/HLD/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Code Review/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Compile/Estimated Defects Removed per Hour,NaN
+/Project/lab2-Fornite/Design Review/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Test/Time To Date,6.0E-5
+/Project/lab2-Fornite/Normalized_Estimated_Defects_Injected To Date,NaN
+/Project/lab2-Fornite/Code Review/Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/HLD/Defect Density To Date,0.0
+/Project/lab2-Fornite/Code Review/Estimated Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Reassessment/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Design/Defects Injected,0.0
+/Project/lab2-Fornite/Code/Cumulative Defect Injection % To Date,0.9230769230769229
+/Project/lab2-Fornite/Design Review/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/HLD Review/Estimated Appraisal Rate To Date,Infinity
+/Project/lab2-Fornite/Code Review/Time,0.0
+/Project/lab2-Fornite/HLD vs Design/Time Ratio,NaN
+/Project/lab2-Fornite/Design/Defects Removed,0.0
+/Project/lab2-Fornite/Before Development/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Compile/Time,0.0
+/Project/lab2-Fornite/HLD Review vs HLD/Time Ratio,NaN
+/Project/lab2-Fornite/Defects Injected To Date,1.3000000000000001E-5
+/Project/lab2-Fornite/Compile/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Design/leaf,TAG
+/Project/lab2-Fornite/Base_Parts/0/Actual Modified To Date,0.0
+/Project/lab2-Fornite/Productivity,0.0
+/Project/lab2-Fornite/Reassessment/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/% Reused To Date,0.0
+/Project/lab2-Fornite/Test/Defect Density,Infinity
+/Project/lab2-Fornite/Compile/Defects Injected,0.0
+/Project/lab2-Fornite/Code/Defects Removed To Date,1.0E-6
+/Project/lab2-Fornite/Estimated Quality_Profile_3 To Date,1.0
+/Project/lab2-Fornite/Design/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Code/Defects Injected To Date,8.0E-6
+/Project/lab2-Fornite/Design Review/Time,0.0
+/Project/lab2-Fornite/node,TAG
+/Project/lab2-Fornite/Defect Density To Date,64.99999999999999
+/Project/lab2-Fornite/Time Estimating Error To Date,Infinity
+/Project/lab2-Fornite/Design Review/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Defects Removed per Hour To Date,1.625
+/Project/lab2-Fornite/Compile/Defects Removed,0.0
+/Project/lab2-Fornite/AGGR_SIZE_METRIC_NAME,New & Changed KLOC
+/Project/lab2-Fornite/Deleted LOC To Date,0.0
+/Project/lab2-Fornite/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Planning/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Design/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Code/Estimated Defects Removed per Hour,NaN
+/Project/lab2-Fornite/Compile/Estimated Time,NaN
+/Project/lab2-Fornite/Postmortem/Defects Injected per Hour,Infinity
+/Project/lab2-Fornite/Development_Phase_List,DesignCode
+/Project/lab2-Fornite/Postmortem/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Code Review/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Reassessment/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Estimated Aggregate Size,NaN
+/Project/lab2-Fornite/Reused LOC,0.0
+/Project/lab2-Fornite/Planning/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Design Review/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Code Review vs Code/Estimated Time Ratio To Date,Infinity
+/Project/lab2-Fornite/Design/Cumulative Defect Injection % To Date,0.30769230769230765
+/Project/lab2-Fornite/Postmortem/Defects Injected,0.0
+/Project/lab2-Fornite/Normalization %/Defects Injected/PSP3 To Date,1.0
+/Project/lab2-Fornite/Planning/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/New & Changed LOC,0.0
+/Project/lab2-Fornite/PQI,0.0
+/Project/lab2-Fornite/Reassessment/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Design Review vs Design/Time Ratio,0.0
+/Project/lab2-Fornite/Code/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Design Review/Defects Removed,0.0
+/Project/lab2-Fornite/Compile/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Planning/Time,467.0
+/Project/lab2-Fornite/Yield,Infinity
+/Project/lab2-Fornite/Planning/Defect Injection Density,Infinity
+/Project/lab2-Fornite/Test/Defects Removed To Date,1.0E-6
+/Project/lab2-Fornite/Estimated Productivity,NaN
+/Project/lab2-Fornite/Estimated % Appraisal COQ To Date,Infinity
+/Project/lab2-Fornite/Compile/Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/Test/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Planning/Defects Removed To Date,0.0
+/Project/lab2-Fornite/Normalization %/Time/PSP0-2 To Date,1.0
+/Project/lab2-Fornite/Last_Failure_Phase,Test
+/Project/lab2-Fornite/Code/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/HLD Review/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Planning/Node_Type,(Planning)
+/Project/lab2-Fornite/Design/Time,245.0
+/Project/lab2-Fornite/Design/Defects Injected To Date,4.0E-6
+/Project/lab2-Fornite/Code Review/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Design/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/% Appraisal COQ,0.0
+/Project/lab2-Fornite/Compile/leaf,TAG
+/Project/lab2-Fornite/New & Changed KLOC To Date,2.0000000000000002E-7
+/Project/lab2-Fornite/Estimated Proxy Size To Date,0.0
+/Project/lab2-Fornite/Design Review/Appraisal Rate,Infinity
+/Project/lab2-Fornite/Code/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Estimated Object LOC To Date,0.0
+/Project/lab2-Fornite/New Reused LOC To Date,0.0
+/Project/lab2-Fornite/Design/Combined Time,245.0
+/Project/lab2-Fornite/HLD Review/Estimated DRL To Date,NaN
+/Project/lab2-Fornite/Design Review/Estimated Appraisal Rate,NaN
+/Project/lab2-Fornite/Compile/Defects Removed To Date,2.0E-6
+/Project/lab2-Fornite/Code/Combined Defects Injected To Date,8.0E-6
+/Project/lab2-Fornite/Postmortem/Node_Type,(Postmortem)
+/Project/lab2-Fornite/Compile/Defect Density,Infinity
+/Project/lab2-Fornite/Base_Parts/0/Added To Date,0.0
+/Project/lab2-Fornite/% Failure COQ To Date,0.15
+/Project/lab2-Fornite/HLD/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Time,2297.0
+/Project/lab2-Fornite/Reused Objects/0/LOC To Date,0.0
+/Project/lab2-Fornite/Design/Defects Injected per Hour To Date,1.9999999999999998
+/Project/lab2-Fornite/FILES_XML,,/pspDoc/custom.xml,/pspDoc/files.xml,
+/Project/lab2-Fornite/Added LOC,0.0
+/Project/lab2-Fornite/Defects Removed To Date,1.3E-5
+/Project/lab2-Fornite/Deleted LOC,0.0
+/Project/lab2-Fornite/After Development/Estimated Defects Removed To Date,NaN
+/Project/lab2-Fornite/PSP3_Cycle_Size To Date,0.0
+/Project/lab2-Fornite/Postmortem/Phase_Color,#996633
+/Project/lab2-Fornite/Code/Defect Injection Density To Date,39.99999999999999
+/Project/lab2-Fornite/Added LOC To Date,2.0E-4
+/Project/lab2-Fornite/Code/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Planning/Defects Injected per Hour To Date,0.0
+/Project/lab2-Fornite/Yield To Date,0.8333333333333333
+/Project/lab2-Fornite/Test/Estimated Time,NaN
+/Project/lab2-Fornite/Compile/Estimated DRL,NaN
+/Project/lab2-Fornite/Base_Parts/0/Actual Added To Date,0.0
+/Project/lab2-Fornite/Design Review vs Design/Estimated Time Ratio To Date,Infinity
+/Project/lab2-Fornite/CPI To Date,0.0
+/Project/lab2-Fornite/Test/Estimated Defects Injected per Hour,NaN
+/Project/lab2-Fornite/Estimated Base Additions LOC To Date,0.0
+/Project/lab2-Fornite/Planning/leaf,TAG
+/Project/lab2-Fornite/Design Review/Phase_Color,#6666ff
+/Project/lab2-Fornite/Estimated % Failure COQ,NaN
+/Project/lab2-Fornite/Planning/Estimated Defects Injected per Hour,NaN
+/Project/lab2-Fornite/Process_ID,PSP0
+/Project/lab2-Fornite/AFR To Date,1.6666666666666667
+/Project/lab2-Fornite/Estimated Deleted LOC To Date,0.0
+/Project/lab2-Fornite/Base_Parts/0/Actual Deleted To Date,0.0
+/Project/lab2-Fornite/Defects Removed per KLOC To Date,64.99999999999999
+/Project/lab2-Fornite/Code/Combined Time To Date,1.8E-4
+/Project/lab2-Fornite/SIZE_METRIC_NAME_ABBR,LOC
+/Project/lab2-Fornite/Quality_Profile_3 To Date,1.0000000000000002
+/Project/lab2-Fornite/HLD Review/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/In_Postmortem,0.0
+/Project/lab2-Fornite/Estimated Time,NaN
+/Project/lab2-Fornite/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Compile/node,TAG
+/Project/lab2-Fornite/New Reused LOC,0.0
+/Project/lab2-Fornite/PSP0,TAG
+/Project/lab2-Fornite/Design Review/Defect Density To Date,14.999999999999998
+/Project/lab2-Fornite/Estimated Added LOC To Date,0.0
+/Project/lab2-Fornite/Postmortem/Defects Removed per Hour To Date,0.0
+/Project/lab2-Fornite/Design Review/Estimated DRL To Date,NaN
+/Project/lab2-Fornite/Test/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Test/Defects Injected per Hour To Date,0.0
+/Project/lab2-Fornite/Design/Defect Injection Density,Infinity
+/Project/lab2-Fornite/Code Review vs Code/Time Ratio To Date,0.5
+/Project/lab2-Fornite/Test/Defect Density To Date,4.999999999999999
+/Project/lab2-Fornite/PM/Defects Injected,0.0
+/Project/lab2-Fornite/Quality_Profile_1 To Date,1.0
+/Project/lab2-Fornite/Code/Combined Defects Removed,0.0
+/Project/lab2-Fornite/Postmortem/Time To Date,2.4E-5
+/Project/lab2-Fornite/Normalization %/Time/PSP3 To Date,1.0
+/Project/lab2-Fornite/Normalized_Estimated_Defects_Removed To Date,NaN
+/Project/lab2-Fornite/Code Review/DRL To Date,6.000000000000001
+/Project/lab2-Fornite/PSP3_Cycle_Even_Time To Date,Infinity
+/Project/lab2-Fornite/Code Review/Defect Injection Density To Date,0.0
+/Project/lab2-Fornite/Estimated New Objects LOC To Date,0.0
+/Project/lab2-Fornite/Estimated LOC per Hour To Date,Infinity
+/Project/lab2-Fornite/Estimated AFR To Date,Infinity
+/Project/lab2-Fornite/Code Review/% Phase Yield To Date,0.7499999999999999
+/Project/lab2-Fornite/HLD Review/Phase_Color,#990099
+/Project/lab2-Fornite/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Postmortem/Defects Injected per Hour To Date,0.0
+/Project/lab2-Fornite/Test/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Code/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Code Review vs Code/Time Ratio,0.0
+/Project/lab2-Fornite/psp0,TAG
+/Project/lab2-Fornite/Design/Combined Estimated Time To Date,0.0
+/Project/lab2-Fornite/Base LOC To Date,0.0
+/Project/lab2-Fornite/Estimated % New Reused To Date,Infinity
+/Project/lab2-Fornite/Code Review/Estimated Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/Defect Injection Density To Date,65.0
+/Project/lab2-Fornite/Design Review/Defects Removed per Hour To Date,3.0
+/Project/lab2-Fornite/Design/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Estimated Yield To Date,Infinity
+/Project/lab2-Fornite/Design/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Code/Combined Defects Injected,0.0
+/Project/lab2-Fornite/HLD Review/Defect Density To Date,0.0
+/Project/lab2-Fornite/HLD/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Planning/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Defect Density,NaN
+/Project/lab2-Fornite/Design/Combined Defects Injected To Date,4.0E-6
+/Project/lab2-Fornite/Test/node,TAG
+/Project/lab2-Fornite/Aggregate Size To Date,2.0000000000000002E-7
+/Project/lab2-Fornite/Planning/Defect Density,Infinity
+/Project/lab2-Fornite/Design Review/Defect Injection Density,Infinity
+/Project/lab2-Fornite/Postmortem/Defect Injection Density,Infinity
+/Project/lab2-Fornite/Postmortem/Defect Density To Date,0.0
+/Project/lab2-Fornite/Planning/Time To Date,2.4E-5
+/Project/lab2-Fornite/Additions LOC To Date,0.0
+/Project/lab2-Fornite/Design/Time To Date,1.2E-4
+/Project/lab2-Fornite/Planning/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Postmortem/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Test/Defects Removed per Hour,Infinity
+/Project/lab2-Fornite/Test/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Code Review/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Compile/Defects Removed per Hour To Date,9.999999999999998
+/Project/lab2-Fornite/PSP Project Document Directory,?????
+/Project/lab2-Fornite/HLD/Estimated Defect Density To Date,Infinity
+/Project/lab2-Fornite/Use_Rollup,PSP
+/Project/lab2-Fornite/Estimated Time/UPI To Date,0.0
+/Project/lab2-Fornite/Estimated Quality_Profile_4 To Date,1.0
+/Project/lab2-Fornite/HLD Review/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Planning/Defects Removed per Hour,0.0
+/Project/lab2-Fornite/Compile/Time To Date,1.2E-5
+/Project/lab2-Fornite/Estimated Modified LOC To Date,0.0
+/Project/lab2-Fornite/Normalized_Estimated_Time To Date,NaN
+/Project/lab2-Fornite/HLD/Defects Removed To Date,0.0
+/Project/lab2-Fornite/Failure_Phase_List,CompileTest
+/Project/lab2-Fornite/Compile/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Postmortem/Estimated Defects Removed,0.0
+/Project/lab2-Fornite/Design/Defect Density,Infinity
+/Project/lab2-Fornite/PSP3_Cycle_Time_Ratio To Date,Infinity
+/Project/lab2-Fornite/HLD/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/Size Estimating Error,NaN
+/Project/lab2-Fornite/Base_Parts_Prefix_List To Date,/To Date/PSP/All/Base_Parts/0
+/Project/lab2-Fornite/PSP3_Cycle_Est_Time To Date,0.0
+/Project/lab2-Fornite/Postmortem/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Code/Estimated Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Estimated Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Test/Estimated Defect Injection Density,NaN
+/Project/lab2-Fornite/Has Compile Phase,TAG
+/Project/lab2-Fornite/Quality_Profile_2 To Date,1.0
+/Project/lab2-Fornite/HLD Review vs HLD/Estimated Time Ratio To Date,Infinity
+/Project/lab2-Fornite/Design Review/Estimated Appraisal Rate To Date,Infinity
+/Project/lab2-Fornite/In_Postmortem To Date,1.0
+/Project/lab2-Fornite/Code/Defects Injected,0.0
+/Project/lab2-Fornite/Design/Total Time To Date,1.8E-4
+/Project/lab2-Fornite/Estimated Quality_Profile_5 To Date,1.0
+/Project/lab2-Fornite/Design Review/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Planning/Defect Density To Date,0.0
+/Project/lab2-Fornite/Code/leaf,TAG
+/Project/lab2-Fornite/After Development/Defects Removed To Date,0.0
+/Project/lab2-Fornite/Compile/Estimated DRL To Date,NaN
+/Project/lab2-Fornite/Aggregate Size,0.0
+/Project/lab2-Fornite/Reassessment/Phase_Color,#cdaa7d
+/Project/lab2-Fornite/Normalization %/Defects Injected/PSP3cycle To Date,1.0
+/Project/lab2-Fornite/% Failure COQ,0.0
+/Project/lab2-Fornite/Defect Density,Infinity
+/Project/lab2-Fornite/HLD Review/Defects Injected per Hour To Date,Infinity
+/Project/lab2-Fornite/Design/Estimated Defects Removed To Date,0.0
+/Project/lab2-Fornite/Compile/Defect Density To Date,9.999999999999998
+/Project/lab2-Fornite/Code Review/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Planning/Estimated Defects Removed per Hour,NaN
+/Project/lab2-Fornite/Code Review/Defects Removed To Date,6.0E-6
+/Project/lab2-Fornite/Defects Removed,0.0
+/Project/lab2-Fornite/HLD Review/Defects Removed per Hour To Date,Infinity
+/Project/lab2-Fornite/Postmortem/Defects Removed,0.0
+/Project/lab2-Fornite/Code Review/Defects Injected To Date,0.0
+/Project/lab2-Fornite/Compile/Defect Injection Density To Date,4.999999999999999
+/Project/lab2-Fornite/Code Review/Estimated Defect Injection Density To Date,Infinity
+/Project/lab2-Fornite/PM/Estimated Time To Date,0.0
+/Project/lab2-Fornite/Code Review/Estimated Defects Injected,0.0
+/Project/lab2-Fornite/Phase_Display_Filter_List,PlanningDesignCodeCompileTestPostmortem
+/Project/lab2-Fornite/Estimated PQI,1.0
+/Project/lab2-Fornite/Estimated Defects Removed per KLOC To Date,Infinity
+/Project/lab2-Fornite/Planning/Defects Injected,0.0
+/Project/lab2-Fornite/Design/Combined Time To Date,1.8E-4
+/Project/lab2-Fornite/Planning/Estimated Defects Injected To Date,0.0
+/Project/lab2-Fornite/Planning/Started,ago 31, 2018 11:31:46 AM
+/Project/lab2-Fornite/Code/Started,sep 05, 2018 09:45:35 PM
+/Project/lab2-Fornite/Design/Started,sep 08, 2018 01:53:38 PM
+/Project/lab2-Fornite/Started,ago 31, 2018 11:31:46 AM
+!ago 31, 2018 11:31:46 AM!,83
+!sep 01, 2018 09:22:40 AM!,45
+!sep 05, 2018 09:45:35 PM!,68
+!sep 07, 2018 11:02:49 AM!,19
+!sep 07, 2018 11:22:15 AM!,5
+!sep 07, 2018 11:33:07 AM!,144
+!sep 07, 2018 06:42:56 PM!,98
+!sep 07, 2018 06:42:56 PM!,49
+!sep 08, 2018 12:07:34 PM!,106
+!sep 08, 2018 01:53:38 PM!,85
+!sep 08, 2018 03:18:34 PM!,17
+!sep 10, 2018 05:03:28 PM!,329
+!sep 15, 2018 06:23:31 PM!,25
+!sep 15, 2018 06:57:53 PM!,94
+!sep 15, 2018 08:32:02 PM!,30
+!sep 16, 2018 06:27:12 PM!,31
+!sep 16, 2018 08:29:13 PM!,10
+!sep 16, 2018 09:02:45 PM!,43
+!sep 17, 2018 02:49:22 PM!,137
+!sep 19, 2018 01:49:02 PM!,230
+!sep 20, 2018 12:40:47 AM!,649
+<!-- start defects -->
+<defects>
+</defects>

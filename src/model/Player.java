@@ -185,6 +185,22 @@ public class Player implements Comparable<Player>{
 		// TODO Auto-generated method stub
 		return nickName;
 	}
+
+	public boolean isOnline() {
+		return isOnline;
+	}
+
+	public void setOnline(boolean isOnline) {
+		this.isOnline = isOnline;
+	}
+
+	public boolean isFindingMatch() {
+		return isFindingMatch;
+	}
+
+	public void setFindingMatch(boolean isFindingMatch) {
+		this.isFindingMatch = isFindingMatch;
+	}
 	
 
 

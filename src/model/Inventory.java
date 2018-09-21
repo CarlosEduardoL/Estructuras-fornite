@@ -1,4 +1,4 @@
-package model;
+ package model;
 
 import cUtil.Stack;
 import cUtil.StackException;
