@@ -28,7 +28,7 @@ public class Inventory {
 	 * @throws StackException 
 	 */
 	public Weapon getLastWeapon() throws StackException {
-		if (weapons.top().getAmmunition() > 1 || weapons.top().getType().equals("axe.png")) {
+		if (weapons.top().getAmmunition() > 1 || weapons.top().getType().equals("/axe.png")) {
 			try {
 				current = weapons.top();
 				

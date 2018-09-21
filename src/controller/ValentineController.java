@@ -6,6 +6,8 @@ package controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javax.swing.JOptionPane;
+
 import cUtil.StackException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -56,7 +58,7 @@ public class ValentineController implements Initializable {
 	private Label total;
 	
 	@FXML
-	private ImageView image;
+	private ImageView image,image2;
 
 
 
@@ -80,13 +82,19 @@ public class ValentineController implements Initializable {
 		}else if (w3.isSelected()) {
 			img = "/thermal-scope-assault-rifle.png";
 		}else if (w4.isSelected()) {
-			img = "light-machine-gun.png";
+			img = "/light-machine-gun.png";
 		}else if (w5.isSelected()) {
-			img = "guns-clipart-fortnite-1.png";
+			img = "/guns-clipart-fortnite-1.png";
 		}
-		testPlayer.getInventory().addWeapon(new Weapon(img,1+ Integer.parseInt(ammunition.getText())));
-		total.setText("ammunition: "+testPlayer.getInventory().getLastWeapon().getAmmunition());
-		image.setImage(new Image(getClass().getResourceAsStream(img)));
+		try {
+			testPlayer.getInventory().addWeapon(new Weapon(img,1+ Integer.parseInt(ammunition.getText())));
+			total.setText("ammunition: "+testPlayer.getInventory().getLastWeapon().getAmmunition());
+			image.setImage(new Image(getClass().getResourceAsStream(img)));
+			image2.setImage(new Image(getClass().getResourceAsStream(img)));
+		}catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Please put a integer numbrer", "Error", JOptionPane.ERROR_MESSAGE);
+		}
+		
 	}
 	
 	public void fire(ActionEvent event) throws StackException {

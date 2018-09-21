@@ -9,11 +9,25 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#move" onKeyReleased="#move" prefHeight="589.0" prefWidth="889.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ValentineController">
    <children>
+      <Label layoutY="132.0" prefHeight="44.0" prefWidth="132.0" text="Weapon Valentine Inventory" textAlignment="CENTER" textFill="RED" wrapText="true" />
+      <ImageView fx:id="image" fitHeight="90.0" fitWidth="149.0" layoutX="21.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../data/axe.png" />
+         </image>
+         <effect>
+            <DropShadow height="23.38" radius="10.594999999999999" spread="0.24" />
+         </effect>
+      </ImageView>
+      <Label fx:id="total" layoutX="13.0" layoutY="309.0" prefHeight="61.0" prefWidth="90.0" text="ammunition: infinite" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="31.0" layoutY="391.0" mnemonicParsing="false" onAction="#fire" text="Fire" />
       <Pane layoutX="689.0" prefHeight="597.0" prefWidth="196.0">
          <children>
             <RadioButton fx:id="w1" focusTraversable="false" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onKeyPressed="#move" prefHeight="20.0" prefWidth="177.0" selected="true" text="EXPLOSIVE WEAPONS">
@@ -58,7 +72,7 @@
                   <Font size="18.0" />
                </font>
             </Button>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image2" fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../data/explosiveWeapon.png" />
                </image>
@@ -80,24 +94,5 @@
                </graphic></Button>
          </children>
       </Pane>
-      <VBox alignment="TOP_CENTER" prefHeight="597.0" prefWidth="121.0">
-         <children>
-            <Label prefHeight="44.0" prefWidth="132.0" text="Weapon Valentine Inventory" textAlignment="CENTER" textFill="RED" wrapText="true" />
-            <ImageView fx:id="image" fitHeight="90.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../data/axe.png" />
-               </image>
-               <effect>
-                  <DropShadow height="23.38" radius="10.594999999999999" spread="0.24" />
-               </effect>
-            </ImageView>
-            <Label fx:id="total" prefHeight="61.0" prefWidth="90.0" text="ammunition: infinite" textAlignment="CENTER" wrapText="true">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <Button mnemonicParsing="false" onAction="#fire" text="Fire" />
-         </children>
-      </VBox>
    </children>
 </Pane>
