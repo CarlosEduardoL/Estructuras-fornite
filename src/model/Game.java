@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import cUtil.CHashTable;
+import cUtil.CList;
 import cUtil.List;
 import cUtil.Map;
 
@@ -17,7 +18,7 @@ public class Game {
 	private Map<String, String> developers;
 	
 	private PingFilter<Integer, Player> pingFilter;
-	private List<Match> matches;
+	private CList<Match> matches;
 	
 	/**
 	 * @throws IOException 
@@ -30,7 +31,7 @@ public class Game {
 		developers.set("NELSON", "NELSON");
 		developers.set("SARA", "SARA");
 		
-		
+		pingFilter = new PingFilter<>();
 		developers.set("SARA", "SARA");	
 	}
 	
@@ -83,6 +84,7 @@ public class Game {
 		//After doing this, we're going to break the list that every chaining point has.
 		while(i < players.length-1) {
 			
+			System.out.println(players[i]);
 			pingFilter.set(players[i].getPing(), players[i]);
 			i++;
 		}
@@ -102,4 +104,7 @@ public class Game {
 		
 	}
 	
+	public CList<Match> getMatches(){
+		return matches;
+	}
 }

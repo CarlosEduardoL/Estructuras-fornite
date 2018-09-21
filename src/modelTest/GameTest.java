@@ -6,11 +6,14 @@ package modelTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.io.IOException;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import cUtil.CQueue;
 import cUtil.EmptyQueueExeption;
+import model.Game;
 import model.Match;
 import model.Player;
 import sun.nio.cs.ext.MacArabic;
@@ -21,11 +24,15 @@ import sun.nio.cs.ext.MacArabic;
  */
 public class GameTest {
 	
-	private Match match;
+	private Game game;
 	@BeforeEach
 	void setupStage1() {
-		Player[] temp = new Player[1];
-		match = new Match(temp) ;
+		try {
+			game = new Game();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 
@@ -33,9 +40,21 @@ public class GameTest {
 	void testStandardDeviation() {
 		setupStage1();
 		
-		int[] pings = {10, 12, 14, 15, 17, 18,18,24};
-		double prueba = match.standardDeviation(pings);
-		System.out.println(prueba);
+		try {
+			game.initRanking();
+			game.extractPlayersFromRanking();
+			Player[] temp = game.getRanking().getRanking();
+			
+			System.out.println(game.getMatches().get(0).toString());
+			
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		
 	}
 }

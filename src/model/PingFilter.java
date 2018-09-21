@@ -29,7 +29,8 @@ public class PingFilter<K,T> implements Map<K,T>{
 	 */
 	@SuppressWarnings("unchecked")
 	public PingFilter() {
-		queue = (CQueue<Player>[]) new List[INITIAL_SIZE];
+		queue = (CQueue<Player>[]) new CQueue[INITIAL_SIZE];
+		readyMatches = new CList<>();
 	}
 	
 
@@ -41,6 +42,7 @@ public class PingFilter<K,T> implements Map<K,T>{
 		if (queue[hash(key)] == null) {
 			queue[hash(key)] = new CQueue<Player>();
 			queue[hash(key)].enqueue((Player) value);
+			System.out.println("Frist");
 		} else {
 			queue[hash(key)].enqueue((Player)value);
 			
@@ -129,7 +131,7 @@ public class PingFilter<K,T> implements Map<K,T>{
 	 * @see cUtil.Map#hash(java.lang.Object)
 	 */
 	public int hash(K key) {
-		return Math.abs(key.hashCode() % queue.length);
+		return Math.abs((int)key / 100);
 	}
 
 	/* (non-Javadoc)
