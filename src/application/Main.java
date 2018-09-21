@@ -27,8 +27,6 @@ public class Main extends Application {
 //			primaryStage.show();
 			
 			
-			Game g = new Game();
-			
 			Parent root = FXMLLoader.load(getClass().getResource("/application/Login.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

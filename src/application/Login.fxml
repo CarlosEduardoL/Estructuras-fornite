@@ -38,7 +38,7 @@
                   <DropShadow />
                </effect>
             </TextField>
-            <PasswordField fx:id="pass" layoutX="42.0" layoutY="223.0" prefHeight="25.0" prefWidth="316.0" promptText="password">
+            <PasswordField fx:id="pass" layoutX="42.0" layoutY="223.0" onAction="#singIn" prefHeight="25.0" prefWidth="316.0" promptText="password">
                <effect>
                   <DropShadow />
                </effect>

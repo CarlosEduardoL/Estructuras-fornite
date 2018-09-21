@@ -22,21 +22,15 @@ public class Game {
 		developers.set("CARLOS", "CARLOS");
 		developers.set("SANTIAGO", "SANTIAGO");
 		developers.set("NELSON", "NELSON");
-		developers.set("SARA", "SARA");
-		
-		
+		developers.set("SARA", "SARA");	
+	}
+	
+	public void initRanking() throws NumberFormatException, IOException {
 		BufferedReader reader = new BufferedReader(new FileReader(new File("PlayerData.txt")));
-		String player = "";
 		String temp;
-		while((temp = reader.readLine()) != null) {
-			player += temp + "-";
-		}
-		
 		ranking = new Ranking();
-		String[] players = player.split("-");
-		
-		for (int i = 0; i < players.length; i++) {
-			String[] data = players[i].split(" ");
+		while((temp = reader.readLine()) != null) {
+			String[] data = temp.split(" ");
 			Player p = new Player(data[0]);
 			p.setKills(Integer.parseInt(data[1]));
 			p.setPing(Integer.parseInt(data[2]));
@@ -49,9 +43,12 @@ public class Game {
 			p.setTimePlayed(Integer.parseInt(data[9]));
 			ranking.addPlayer(p);
 		}
-		
+				
 		reader.close();
-		
+	}
+	
+	public void sortRanking() {
+		ranking.sort();
 	}
 	
 	public boolean checkDeveloper(String name,String pass) {
