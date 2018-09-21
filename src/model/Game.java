@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-
 import cUtil.CHashTable;
 import cUtil.CList;
+import cUtil.List;
 import cUtil.Map;
 import cUtil.SCHeap;
 
@@ -17,11 +17,10 @@ public class Game {
 	
 	private Ranking ranking;
 	private Map<String, String> developers;
-	private SCHeap<Player> heapPros;
-	private SCHeap<Player> heapProsWithLag;
-	private SCHeap<Player> heapNoobs;
-	private SCHeap<Player> heapNoobsWithLag;
-	private CList<Match> matches;
+	
+	private PingFilter<Integer, Player> pingFilter;
+	private List<Match> matches;
+	private int matchCounter;
 	
 	/**
 	 * @throws IOException 
@@ -33,6 +32,8 @@ public class Game {
 		developers.set("SANTIAGO", "SANTIAGO");
 		developers.set("NELSON", "NELSON");
 		developers.set("SARA", "SARA");
+		
+		matchCounter = 0;
 		
 		
 		BufferedReader reader = new BufferedReader(new FileReader(new File("PlayerData.txt")));
@@ -78,56 +79,32 @@ public class Game {
 		return ranking;
 	}
 	
-	public void addPlayer(Player newPlayer) {
-		
-		if(newPlayer.getPing() <= GOODPING && newPlayer.getSkill()>=PROSKILL) {
-			heapPros.add(newPlayer);
-		}else if(newPlayer.getPing() > GOODPING && newPlayer.getSkill()>PROSKILL) {
-			heapProsWithLag.add(newPlayer);
-		}else if(newPlayer.getPing() > GOODPING && newPlayer.getSkill()<PROSKILL) {
-			heapNoobs.add(newPlayer);
-		}else {
-			heapNoobsWithLag.add(newPlayer);
+	public void extractPlayersFromRanking() {
+		Player[] players = ranking.getRanking();
+		int i = 0;
+		//Send 500 players to the next filter and add them to the new Hash Table
+		//After doing this, we're going to break the list that every chaining point has.
+		while(i < players.length-1) {
+			
+			pingFilter.set(players[i].getPing(), players[i]);
+			i++;
 		}
 	}
 	
+	public void addPlayer(Player newPlayer) {
+		
+		
+	}
+	
 	public void breakMatches() {
-		Player[] temp = new Player[100];
-		for (int i = 1; i < heapPros.size(); i++) {
-			if(i%100 == 0) {
-				matches.add(new Match(temp));
-			}else {
-				
-				temp[i-1] = heapPros.getElement(i);
-			}
-		}
+	}
+	
+	public void finishMatch(int index) {
 		
-		for (int i = 1; i < heapProsWithLag.size(); i++) {
-			if(i%100 == 0) {
-				matches.add(new Match(temp));
-			}else {
-				
-				temp[i-1] = heapProsWithLag.getElement(i);
-			}
-		}
-		
-		for (int i = 1; i < heapNoobs.size(); i++) {
-			if(i%100 == 0) {
-				matches.add(new Match(temp));
-			}else {
-				
-				temp[i-1] = heapNoobs.getElement(i);
-			}
-		}
-		
-		for (int i = 1; i < heapNoobsWithLag.size(); i++) {
-			if(i%100 == 0) {
-				matches.add(new Match(temp));
-			}else {
-				
-				temp[i-1] = heapNoobsWithLag.getElement(i);
-			}
-		}
+	}
+	
+	public void addMatch(Match newMatch) {
+		matches.add(newMatch);
 	}
 	
 }

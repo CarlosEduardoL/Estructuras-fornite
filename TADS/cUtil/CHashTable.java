@@ -127,5 +127,9 @@ public class CHashTable<K, T> implements Map<K, T> {
 			}
 		}
 	}
+	
+	public int getArrayLength() {
+		return array.length;
+	}
 
 }
