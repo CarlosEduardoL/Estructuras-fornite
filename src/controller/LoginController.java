@@ -39,7 +39,16 @@ public class LoginController implements Initializable {
 	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		try {
+			game.initRanking();
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		game.sortRanking();
 	}
 	
 	public void singIn(ActionEvent event) {

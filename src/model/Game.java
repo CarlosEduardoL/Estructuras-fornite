@@ -55,6 +55,8 @@ public class Game {
 			p.setPlayedGames(Integer.parseInt(data[7]));
 			p.setTimesInTopTen(Integer.parseInt(data[8]));
 			p.setTimePlayed(Integer.parseInt(data[9]));
+			p.setOnline(Math.random()<0.7);
+			p.setFindingMatch(p.isOnline()?Math.random()<90:false);
 			ranking.addPlayer(p);
 		}
 				
