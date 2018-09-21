@@ -43,7 +43,7 @@
             <DropShadow height="51.98" radius="21.915" spread="0.48" width="37.68" />
          </effect>
       </Button>
-      <Button layoutX="693.0" layoutY="279.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="111.0" text="Make a plataform match" textAlignment="CENTER" wrapText="true">
+      <Button layoutX="693.0" layoutY="279.0" mnemonicParsing="false" onAction="#viewValentine" prefHeight="91.0" prefWidth="111.0" text="Test the valentin mode" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>

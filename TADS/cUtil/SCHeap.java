@@ -34,42 +34,6 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 
 	}
 	
-	private void bubbleUp() {
-        int index = size();
-        
-        while (hasParent(index) && (parent(index).compareTo(array[index]) <  0)) {
-            // parent/child are out of order; swap them
-        	
-            swap(index, parentIndex(index));
-            index = parentIndex(index);
-        }        
-    }
-
-	/**
-	 * @param index
-	 * @return
-	 */
-	private int parentIndex(int index) {
-		// TODO Auto-generated method stub
-		return index/2;
-	}
-
-	/**
-	 * @param index
-	 * @return
-	 */
-	private T parent(int index) {
-		// TODO Auto-generated method stub
-		return array[(parentIndex(index))];
-	}
-
-	/**
-	 * @param index
-	 * @return
-	 */
-	private boolean hasParent(int index) {
-		return index>1;
-	}
 
 	/* (non-Javadoc)
 	 * @see cUtil.Heap#add(java.lang.Object)
@@ -84,12 +48,14 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 		
 		heapLast++;
 		array[heapLast] = element;
+		
+		System.out.println("Pase" + heapLast);
 //		maxHeapify(); 
 		
 		int n = size();
 
 		// One by one extract an element from heap
-		for (int i=n/2; i>0; i--)
+		for (int i=n/2; i>0; i-=2)
 		{
 			// call max heapify on the reduced heap
 			maxHeapify(array, n+1, i);
@@ -207,7 +173,7 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 		return heapLast;
 	}
 
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused", "unchecked" })
 	private void resizeArray(int factor) {
 		T[] temp = array.clone();
 		array = (T[]) new Comparable[(int) (array.length * (1 + GROWTH_FACTOR * factor) )];
@@ -217,7 +183,7 @@ public class SCHeap<T extends Comparable<T>> implements Heap<T>,Comparator<T> {
 	}
 	
 	public T getMin(){
-		if (corretion > capacity) {
+		if (corretion > size()) {
 			corretion = 0;
 		}
 		return array[corretion++];

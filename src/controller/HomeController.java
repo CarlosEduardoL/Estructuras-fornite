@@ -30,8 +30,7 @@ public class HomeController implements Initializable {
 	 */
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
-
+		
 	}
 	
 	public void viewRanking(ActionEvent event) {
@@ -51,5 +50,21 @@ public class HomeController implements Initializable {
 		stage.show();
 	}
 	
-
+	public void viewValentine(ActionEvent event) {
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Main.class.getClass().getResource("/application/Valentine.fxml"));
+		try {
+			loader.load();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		Parent root = loader.getRoot();
+		Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+		stage.setTitle("Ranking");
+		Scene scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
 }

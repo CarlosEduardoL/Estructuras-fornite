@@ -35,6 +35,17 @@ public class RankingController implements Initializable {
 	 */
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		try {
+			game.initRanking();
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		game.sortRanking();
+
 		viewRanking();
 	}
 	
@@ -56,6 +67,7 @@ public class RankingController implements Initializable {
 		for (int i = 1; i < ps.length; i++) {
 			if (ps[i]!=null) {
 				area.setText(area.getText() + i + ") " + ps[i].getNickName() + "           Skill:" + ps[i].getSkill() + "\n" );
+				System.err.println(i);
 			}
 		}
 	}
