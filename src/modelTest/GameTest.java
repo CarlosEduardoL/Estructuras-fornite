@@ -45,7 +45,10 @@ public class GameTest {
 			game.extractPlayersFromRanking();
 			Player[] temp = game.getRanking().getRanking();
 			
-			System.out.println(game.getMatches().get(0).toString());
+			System.out.println(game.getMatches().size());
+			for (int i = 0; i <game.getMatches().size(); i++) {
+				System.out.println(game.getMatches().get(i).getFirst());
+			}
 			
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block

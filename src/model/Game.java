@@ -84,8 +84,8 @@ public class Game {
 		//After doing this, we're going to break the list that every chaining point has.
 		while(i < players.length-1) {
 			
-			System.out.println(players[i]);
-			pingFilter.set(players[i].getPing(), players[i]);
+//			System.out.println(players[i]);
+			pingFilter.set(players[i].getPing()/100, players[i]);
 			i++;
 		}
 		

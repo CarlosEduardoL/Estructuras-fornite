@@ -42,7 +42,7 @@ public class PingFilter<K,T> implements Map<K,T>{
 		if (queue[hash(key)] == null) {
 			queue[hash(key)] = new CQueue<Player>();
 			queue[hash(key)].enqueue((Player) value);
-			System.out.println("Frist");
+//			System.out.println("Frist");
 		} else {
 			queue[hash(key)].enqueue((Player)value);
 			

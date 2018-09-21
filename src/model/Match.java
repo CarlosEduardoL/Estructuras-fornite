@@ -3,17 +3,27 @@
  */
 package model;
 
+import cUtil.CList;
+
 /**
  * @author Santiago
  *
  */
 public class Match {
 	
+	private CList<Player> actualPlayers;
+	
 	/**
 	 * 
 	 */
 	public Match(Player[] players) {
+		actualPlayers = new CList<>();
 		// TODO Auto-generated constructor stub
+		for (int i = 0; i < players.length; i++) {
+			if(players[i]!=null) {
+				actualPlayers.add(players[i]);
+			}
+		}
 	}
 	
 	
@@ -52,5 +62,9 @@ public class Match {
 		  desviacion = Math.sqrt(varianza);
 		  
 		  return desviacion;
+	}
+	
+	public String getFirst() {
+		return actualPlayers.get(0).getNickName();
 	}
 }
