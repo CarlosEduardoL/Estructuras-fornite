@@ -40,6 +40,7 @@ public class LoginController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		try {
+			game = new Game();
 			game.initRanking();
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
@@ -49,11 +50,12 @@ public class LoginController implements Initializable {
 			e.printStackTrace();
 		}
 		game.sortRanking();
+		
+//		game.extractPlayersFromRanking();
 	}
 	
 	public void singIn(ActionEvent event) {
 		try {
-			game = new Game();
 			if (game.checkDeveloper(name.getText().toUpperCase(), pass.getText().toUpperCase())) {
 				FXMLLoader loader = new FXMLLoader();
 				loader.setLocation(getClass().getResource("/application/HomePage.fxml"));

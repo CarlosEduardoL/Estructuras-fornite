@@ -38,6 +38,7 @@ public class Player implements Comparable<Player>{
 	 */
 	public Player(String nickName) {
 		this.nickName = nickName;
+		setInventory(new Inventory());
 	}
 
 	/**
@@ -200,6 +201,14 @@ public class Player implements Comparable<Player>{
 
 	public void setFindingMatch(boolean isFindingMatch) {
 		this.isFindingMatch = isFindingMatch;
+	}
+
+	public Inventory getInventory() {
+		return inventory;
+	}
+
+	public void setInventory(Inventory inventory) {
+		this.inventory = inventory;
 	}
 	
 

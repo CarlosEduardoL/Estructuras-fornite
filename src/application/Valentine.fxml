@@ -52,7 +52,7 @@
                   <Font name="Times New Roman" size="18.0" />
                </font>
             </Label>
-            <TextField focusTraversable="false" layoutX="26.0" layoutY="232.0" onKeyPressed="#move" promptText="put the ammunition" />
+            <TextField fx:id="ammunition" focusTraversable="false" layoutX="26.0" layoutY="232.0" onKeyPressed="#move" promptText="put the ammunition" />
             <Button focusTraversable="false" layoutX="42.0" layoutY="289.0" mnemonicParsing="false" onAction="#generateWeapon" onKeyPressed="#move" text="Generete Weapon" wrapText="true">
                <font>
                   <Font size="18.0" />
@@ -83,7 +83,7 @@
       <VBox alignment="TOP_CENTER" prefHeight="597.0" prefWidth="121.0">
          <children>
             <Label prefHeight="44.0" prefWidth="132.0" text="Weapon Valentine Inventory" textAlignment="CENTER" textFill="RED" wrapText="true" />
-            <ImageView fitHeight="90.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image" fitHeight="90.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../data/axe.png" />
                </image>
@@ -91,7 +91,7 @@
                   <DropShadow height="23.38" radius="10.594999999999999" spread="0.24" />
                </effect>
             </ImageView>
-            <Label prefHeight="61.0" prefWidth="90.0" text="ammunition: infinite" textAlignment="CENTER" wrapText="true">
+            <Label fx:id="total" prefHeight="61.0" prefWidth="90.0" text="ammunition: infinite" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="16.0" />
                </font>

@@ -11,13 +11,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
+import model.Player;
+import model.Weapon;
 
 /**
  * @author Carlos Eduardo Lizalda Valencia
@@ -30,6 +34,9 @@ public class ValentineController implements Initializable {
 
 	@FXML
 	private Pane pane;
+	
+	@FXML
+	private TextField ammunition;
 
 	@FXML
 	private Button button;
@@ -41,6 +48,14 @@ public class ValentineController implements Initializable {
 	private RadioButton w1,w2,w3,w4,w5;
 	
 	private boolean left;
+	
+	private Player testPlayer;
+	
+	@FXML
+	private Label total;
+	
+	@FXML
+	private ImageView image;
 
 
 
@@ -49,6 +64,7 @@ public class ValentineController implements Initializable {
 	 */
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		testPlayer = LoginController.game.getRanking().getRanking()[0];
 		button.setFocusTraversable(true);
 		button.requestFocus();
 		System.out.println(button.isFocused() + " " + button.isFocusTraversable());
@@ -59,22 +75,17 @@ public class ValentineController implements Initializable {
 		if (w1.isSelected()) {
 			img = "/explosiveWeapon.png";
 		}else if (w2.isSelected()) {
-			
+			img = "/fortnite-tactical-shotgun-png-3.png";
 		}else if (w3.isSelected()) {
-			
+			img = "/thermal-scope-assault-rifle.png";
 		}else if (w4.isSelected()) {
-			
+			img = "light-machine-gun.png";
 		}else if (w5.isSelected()) {
-			
+			img = "guns-clipart-fortnite-1.png";
 		}
-		
-		Image image = new Image(getClass().getResourceAsStream(img));
-		ImageView view = new ImageView(image);
-		pane.getChildren().add(view);
-		view.setLayoutX(50);
-		view.setLayoutY(50);
-		view.setFitWidth(149);
-		view.setFitHeight(90);
+		testPlayer.getInventory().addWeapon(new Weapon(img,1+ Integer.parseInt(ammunition.getText())));
+		total.setText(testPlayer.getInventory().getLastWeapon().getAmmunition() + "");
+		image.setImage(new Image(getClass().getResourceAsStream(img)));
 	}
 
 	public void move(KeyEvent event) {
