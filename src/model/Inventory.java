@@ -13,7 +13,7 @@ public class Inventory {
 	 * 
 	 */
 	public Inventory() {
-		weapons = new SuperList<Weapon>(new Weapon("axe",Weapon.INFINITE));
+		weapons = new SuperList<Weapon>(new Weapon("/axe.png",Weapon.INFINITE));
 		try {
 			current = weapons.top();
 		} catch (StackException e) {
@@ -25,9 +25,18 @@ public class Inventory {
 	/**
 	 * 
 	 * @return
+	 * @throws StackException 
 	 */
-	public Weapon getLastWeapon() {
-		if (current.getAmmunition() == 0) {
+	public Weapon getLastWeapon() throws StackException {
+		if (weapons.top().getAmmunition() > 1 || weapons.top().getType().equals("axe.png")) {
+			try {
+				current = weapons.top();
+				
+			} catch (StackException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}else {
 			try {
 				current = weapons.pop();
 			} catch (StackException e) {
@@ -35,6 +44,7 @@ public class Inventory {
 				e.printStackTrace();
 			}
 		}
+		current.shoot();
 		return current;
 	}
 

@@ -6,6 +6,7 @@ package controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import cUtil.StackException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -70,7 +71,7 @@ public class ValentineController implements Initializable {
 		System.out.println(button.isFocused() + " " + button.isFocusTraversable());
 	}
 	
-	public void generateWeapon(ActionEvent event) {
+	public void generateWeapon(ActionEvent event) throws StackException {
 		String img = "";
 		if (w1.isSelected()) {
 			img = "/explosiveWeapon.png";
@@ -84,8 +85,14 @@ public class ValentineController implements Initializable {
 			img = "guns-clipart-fortnite-1.png";
 		}
 		testPlayer.getInventory().addWeapon(new Weapon(img,1+ Integer.parseInt(ammunition.getText())));
-		total.setText(testPlayer.getInventory().getLastWeapon().getAmmunition() + "");
+		total.setText("ammunition: "+testPlayer.getInventory().getLastWeapon().getAmmunition());
 		image.setImage(new Image(getClass().getResourceAsStream(img)));
+	}
+	
+	public void fire(ActionEvent event) throws StackException {
+		Weapon temp = testPlayer.getInventory().getLastWeapon();
+		total.setText("ammunition: "+ (temp.getAmmunition() >= 0? temp.getAmmunition(): "infinite")  + "");
+		image.setImage(new Image(getClass().getResourceAsStream(temp.getType())));
 	}
 
 	public void move(KeyEvent event) {

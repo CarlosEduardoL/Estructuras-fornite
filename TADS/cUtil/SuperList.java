@@ -55,6 +55,7 @@ public class SuperList<T> implements List<T>, Stack<T>, Queue<T> {
 	public SuperList(T element) {
 		first = new CNode<T>(element);
 		last = first;
+		size++;
 	}
 	
 	public SuperList(T[] arr) {

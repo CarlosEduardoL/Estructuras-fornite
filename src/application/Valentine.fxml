@@ -96,7 +96,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" text="Fire" />
+            <Button mnemonicParsing="false" onAction="#fire" text="Fire" />
          </children>
       </VBox>
    </children>
